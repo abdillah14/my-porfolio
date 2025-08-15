@@ -11,7 +11,7 @@ export const projects: ProjectType[] = [
     likes: 72,
     category: 'AI/ML',
     status: 'Completed',
-    demoLink: 'https://kuwasafe-demo.vercel.app',
+    demoLink: 'https://abd-le-testeur.vercel.app',
     githubLink: 'https://github.com/yourusername/kuwasafe',
     images: [
       'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop',
@@ -45,7 +45,7 @@ export const projects: ProjectType[] = [
     likes: 68,
     category: 'Data Analytics',
     status: 'In Progress',
-    demoLink: 'https://tafiti-iq-demo.vercel.app',
+    demoLink: 'https://tafiti-iq-agent.vercel.app',
     githubLink: 'https://github.com/yourusername/tafiti-iq',
     images: [
       'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop',
@@ -74,7 +74,7 @@ export const projects: ProjectType[] = [
     likes: 75,
     category: 'Legal Tech',
     status: 'Completed',
-    demoLink: 'https://juridic-law-demo.com',
+    demoLink: 'https://yako-law.vercel.app',
     githubLink: 'https://github.com/yourusername/juridic-law',
     images: [
       'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop',

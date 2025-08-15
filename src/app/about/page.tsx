@@ -12,8 +12,8 @@ export default function AboutPage() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32">
-        <div className="container mx-auto px-4 max-w-7xl">
+      <section className="relative py-15 lg:py-32">
+        <div className="container mx-auto px-4 ">
           {/* Header */}
           <div className="text-center mb-20">
             <div className="inline-block">
@@ -36,13 +36,13 @@ export default function AboutPage() {
             <div className="lg:col-span-2 space-y-8">
               {/* Hero Image Card */}
               <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
+                <div className="absolute inset-0  rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
                 <div className="relative bg-gray-800/40 backdrop-blur-xl p-1 rounded-3xl border border-gray-700/30 shadow-2xl">
                   <div className="bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-xl rounded-3xl p-8 border border-gray-600/20">
                     <div className="relative">
                       {/* Main Profile Image */}
-                      <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden border-2 border-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 p-0.5 shadow-2xl mb-8 group-hover:scale-105 transition-transform duration-500">
-                        <div className="w-full h-full rounded-2xl overflow-hidden bg-gray-900">
+                      <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden border-2 border-transparent  p-0.5 shadow-2xl mb-8 group-hover:scale-105 transition-transform duration-500">
+                        <div className="w-full h-full rounded-2xl overflow-hidden">
                           <Image
                             src="/images/profile.jpg"
                             alt="Abdillah Ally"
@@ -149,36 +149,7 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              {/* Skills Grid */}
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-gray-800/20 backdrop-blur-xl p-6 rounded-2xl border border-gray-700/20 shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center text-sm">⚡</div>
-                    <h3 className="text-xl font-bold text-white">Frontend</h3>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {['React', 'Next.js', 'TypeScript', 'Tailwind'].map((tech) => (
-                      <span key={tech} className="px-3 py-1 bg-blue-500/20 text-blue-300 text-sm rounded-full border border-blue-500/30">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-                
-                <div className="bg-gray-800/20 backdrop-blur-xl p-6 rounded-2xl border border-gray-700/20 shadow-lg hover:shadow-purple-500/20 transition-all duration-300">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center text-sm">🔧</div>
-                    <h3 className="text-xl font-bold text-white">Backend</h3>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {['Node.js', 'Python', 'PostgreSQL', 'AWS'].map((tech) => (
-                      <span key={tech} className="px-3 py-1 bg-purple-500/20 text-purple-300 text-sm rounded-full border border-purple-500/30">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
+           
 
               {/* CTA Section */}
               <div className="relative group">
