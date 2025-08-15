@@ -99,11 +99,11 @@ const Hero = () => {
         {/* Stats or highlights section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-60 max-w-2xl">
           <div className="text-center">
-            <div className="text-3xl font-bold text-blue-400 mb-2">50+</div>
+            <div className="text-3xl font-bold text-blue-400 mb-2">5+</div>
             <div className="text-gray-400 text-sm">Projects Completed</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-purple-400 mb-2">3+</div>
+            <div className="text-3xl font-bold text-purple-400 mb-2">2+</div>
             <div className="text-gray-400 text-sm">Years Experience</div>
           </div>
           <div className="text-center">

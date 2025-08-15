@@ -65,10 +65,10 @@ export default function AboutPage() {
                 <h2 className="text-3xl font-bold mb-6 text-white">My Journey</h2>
                 <div className="space-y-6 text-gray-300 leading-relaxed">
                   <p className="text-lg">
-                    With over <strong className="text-white">8 years of experience</strong> in software engineering, I specialize in creating scalable web applications and innovative digital solutions that drive business growth and enhance user experiences.
+                    With over <strong className="text-white">2 years of experience</strong> in software engineering, I specialize in creating scalable web applications and innovative digital solutions that drive business growth and enhance user experiences.
                   </p>
                   <p>
-                    My journey began with a <strong className="text-blue-400">Computer Science degree from Stanford University</strong>, where I developed a foundation in algorithms, system design, and software architecture. Since then, I've had the privilege of working with both emerging startups and Fortune 500 companies, helping them transform their digital presence.
+                    My journey began with a <strong className="text-blue-400">Software engineering degree from International University of Equator </strong>, where I developed a foundation in algorithms, system design, and software architecture. Since then, I've had the privilege of working with both emerging startups and Fortune 500 companies, helping them transform their digital presence.
                   </p>
                   <p>
                     I'm passionate about leveraging cutting-edge technologies like <strong className="text-purple-400">React, Next.js, and cloud infrastructure</strong> to build performant, user-centric applications. My approach combines technical excellence with business acumen, ensuring that every solution I deliver creates measurable value.
