@@ -62,7 +62,7 @@ export default function ContactPage() {
      text-gray-200 placeholder-gray-500`;
 
   return (
-    <section className="py-20">
+    <section className="py-20" id='contact'>
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
