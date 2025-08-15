@@ -4,25 +4,25 @@ import ProjectCard from '@/components/ProjectCard';
 const projects = [
   {
     id: '1',
-    title: 'E-Commerce Platform',
-    description: 'Full-featured online shopping platform with payment processing and inventory management.',
-    tags: ['Next.js', 'Node.js', 'MongoDB', 'Stripe'],
+    title: 'KuwaSafe',
+    description: 'Turn your code into full unit tests in a few seconds with KuwaSafe.',
+    tags: ['Next.js', 'Convex', 'Langchain', 'gemini'],
     likes: 42,
   },
   {
     id: '2',
-    title: 'Task Management Dashboard',
-    description: 'Real-time collaborative task manager with drag-and-drop interface and analytics.',
-    tags: ['React', 'Firebase', 'Tailwind CSS', 'Redux'],
+    title: 'Tafiti IQ',
+    description: 'Connect your SQL database and explore insights using plain English. No SQL expertise required - just ask questions and get instant visualizations.',
+    tags: ['Next.js', 'MySQl', 'convex', 'langchain'],
     likes: 28,
   },
   {
     id: '3',
-    title: 'Health & Fitness Tracker',
+    title: 'Juridic law',
     description: 'Mobile-first application for tracking workouts, nutrition, and health metrics.',
-    tags: ['React Native', 'Express', 'PostgreSQL', 'GraphQL'],
+    tags: ['Next.js', 'Convex', 'langChain', 'Gemini'],
     likes: 35,
-  }
+  },
 ];
 
 const FeaturedProjects = () => {

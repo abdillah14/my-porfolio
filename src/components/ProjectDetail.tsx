@@ -120,20 +120,20 @@ const ProjectDetail = ({ project }: { project: any }) => {
             <h2 className="text-xl font-semibold mb-4">Project Overview</h2>
             <p className="text-gray-400 mb-6">{project.longDescription}</p>
             
-            <div className="grid grid-cols-2 gap-4">
-              <div>
+            <div className=" gap-4">
+                <p className="font-medium">{project.description}</p>
+              {/* <div>
                 <h3 className="text-gray-400 text-sm mb-1">Timeline</h3>
-                <p className="font-medium">{project.timeline}</p>
-              </div>
-              <div>
+              </div> */}
+              {/* <div>
                 <h3 className="text-gray-400 text-sm mb-1">Role</h3>
                 <p className="font-medium">{project.role}</p>
-              </div>
-              <div>
+              </div> */}
+              {/* <div>
                 <h3 className="text-gray-400 text-sm mb-1">Client</h3>
                 <p className="font-medium">{project.client}</p>
-              </div>
-              <div>
+              </div> */}
+              {/* <div>
                 <h3 className="text-gray-400 text-sm mb-1">Status</h3>
                 <p className={`font-medium ${
                   project.status === 'Completed' ? 'text-green-400' : 
@@ -141,7 +141,7 @@ const ProjectDetail = ({ project }: { project: any }) => {
                 }`}>
                   {project.status}
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
           
