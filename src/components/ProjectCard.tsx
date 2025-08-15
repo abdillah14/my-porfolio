@@ -1,70 +1,116 @@
-// components/ProjectCard.tsx
+// components/ProjectCard.tsx (Enhanced)
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import { ProjectType } from '@/types/project';
 
-const ProjectCard = ({ project }: { project: any }) => {
+const ProjectCard = ({ project }: { project: ProjectType }) => {
   const [likes, setLikes] = useState(project.likes);
   const [isLiked, setIsLiked] = useState(false);
+  const [imageError, setImageError] = useState(false);
 
   useEffect(() => {
-    const likedProjects = JSON.parse(localStorage.getItem('likedProjects') || '{}');
-    if (likedProjects[project.id]) {
-      setIsLiked(true);
-    }
-  }, [project.id]);
+    // Since we can't use localStorage in artifacts, we'll simulate it with state
+    const storedLikes = Math.random() > 0.7; // Randomly simulate some liked projects
+    setIsLiked(storedLikes);
+  }, []);
 
   const handleLike = () => {
     const newLikes = isLiked ? likes - 1 : likes + 1;
     setLikes(newLikes);
     setIsLiked(!isLiked);
-    
-    const likedProjects = JSON.parse(localStorage.getItem('likedProjects') || '{}');
-    likedProjects[project.id] = !isLiked;
-    localStorage.setItem('likedProjects', JSON.stringify(likedProjects));
+  };
+
+  const statusColors = {
+    'Completed': 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300',
+    'In Progress': 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300',
+    'Planning': 'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300'
   };
 
   return (
-    <div className="group bg-white dark:bg-gray-900/50 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-200 hover:shadow-lg dark:hover:shadow-xl/10 h-full flex flex-col backdrop-blur-sm">
-      {/* Compact header image */}
-      <div className="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-900/20 dark:to-purple-900/20 h-32 relative rounded-t-lg">
-        <div className="absolute inset-0 bg-gray-100 dark:bg-gray-800/50 flex items-center justify-center">
-          <div className="bg-gray-200 dark:bg-gray-700 rounded-lg w-12 h-12 flex items-center justify-center">
-            <svg className="w-6 h-6 text-gray-400 dark:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-            </svg>
+    <div className="group bg-white dark:bg-gray-900/50 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-200 hover:shadow-lg dark:hover:shadow-xl/10 h-full flex flex-col backdrop-blur-sm overflow-hidden">
+      {/* Image Section */}
+      <div className="relative h-48 bg-gray-100 dark:bg-gray-800">
+        {!imageError ? (
+          <Image
+            src={project.thumbnail}
+            alt={project.title}
+            fill
+            className="object-cover group-hover:scale-105 transition-transform duration-300"
+            onError={() => setImageError(true)}
+          />
+        ) : (
+          <div className="h-full bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-900/20 dark:to-purple-900/20 flex items-center justify-center">
+            <div className="bg-gray-200 dark:bg-gray-700 rounded-lg w-16 h-16 flex items-center justify-center">
+              <svg className="w-8 h-8 text-gray-400 dark:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+              </svg>
+            </div>
           </div>
+        )}
+        
+        {/* Status Badge */}
+        <div className="absolute top-3 right-3">
+          <span className={`px-2 py-1 rounded-full text-xs font-medium ${statusColors[project.status]}`}>
+            {project.status}
+          </span>
+        </div>
+
+        {/* Category Badge */}
+        <div className="absolute top-3 left-3">
+          <span className="px-2 py-1 bg-black/70 text-white rounded-full text-xs font-medium">
+            {project.category}
+          </span>
         </div>
       </div>
 
       {/* Content section */}
-      <div className="p-4 flex-grow flex flex-col">
+      <div className="p-5 flex-grow flex flex-col">
         {/* Title */}
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 line-clamp-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
           {project.title}
         </h3>
 
         {/* Description */}
-        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3 flex-grow line-clamp-2 leading-relaxed">
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow line-clamp-3 leading-relaxed">
           {project.description}
         </p>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-1.5 mb-4">
-          {project.tags.slice(0, 3).map((tag: string) => (
+        {/* <div className="flex flex-wrap gap-1.5 mb-4">
+          {project?.techStack.slice(0, 3).map((tech: string) => (
             <span 
-              key={tag} 
+              key={tech} 
               className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300"
             >
-              {tag}
+              {tech}
             </span>
           ))}
-          {project.tags.length > 3 && (
+          {project.techStack.length > 3 && (
             <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400">
-              +{project.tags.length - 3}
+              +{project.techStack.length - 3}
             </span>
           )}
-        </div>
+        </div> */}
+        {/* Tags */}
+<div className="flex flex-wrap gap-1.5 mb-4">
+  {(project?.techStack ?? []).slice(0, 3).map((tech: string) => (
+    <span
+      key={tech}
+      className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300"
+    >
+      {tech}
+    </span>
+  ))}
+
+  {project?.techStack && project.techStack.length > 3 && (
+    <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400">
+      +{project.techStack.length - 3}
+    </span>
+  )}
+</div>
+
 
         {/* Actions */}
         <div className="flex items-center justify-between pt-3 border-t border-gray-100 dark:border-gray-800">

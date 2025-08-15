@@ -1,59 +1,17 @@
+// app/projects/[id]/page.tsx
 'use client';
 
 import { use, useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import ProjectDetail from '@/components/ProjectDetail';
-
-const projects = [
-    {
-        id: '1',
-        title: 'KuwaSafe',
-        description: 'Turn your code into full unit tests in a few seconds with KuwaSafe.',
-        techStack: ['Next.js', 'Convex', 'Langchain', 'gemini'],
-        likes: 42,
-      },
-      {
-        id: '2',
-        title: 'Tafiti IQ',
-        description: 'Connect your SQL database and explore insights using plain English. No SQL expertise required - just ask questions and get instant visualizations.',
-        techStack: ['Next.js', 'convex', 'Tailwind CSS', 'langchain'],
-        likes: 28,
-      },
-      {
-        id: '3',
-        title: 'Juridic law',
-        description: 'Mobile-first application for tracking workouts, nutrition, and health metrics.',
-        techStack: ['React Native', 'Express', 'PostgreSQL', 'GraphQL'],
-        likes: 35,
-      },
-  {
-    id: '4',
-    title: 'Real Estate Marketplace',
-    description: 'Property listing platform with interactive maps and virtual tour capabilities.',
-    techStack: ['Next.js', 'Mapbox', 'Node.js', 'MongoDB'],
-    likes: 31,
-  },
-  {
-    id: '5',
-    title: 'Social Media Analytics',
-    description: 'Dashboard for tracking social media performance across multiple platforms.',
-    techStack: ['React', 'D3.js', 'Express', 'MongoDB'],
-    likes: 26,
-  },
-  {
-    id: '6',
-    title: 'AI Content Generator',
-    description: 'Platform that uses GPT-3 to create marketing content and blog posts.',
-    techStack: ['Next.js', 'OpenAI API', 'Node.js', 'Firebase'],
-    likes: 57,
-  },
-];
+import { projects } from '@/data/projects';
+import { ProjectType } from '@/types/project';
 
 export default function ProjectPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = use(params); // ✅ unwrap params promise
+  const { id } = use(params);
   const router = useRouter();
-  const [project, setProject] = useState<any>(null);
+  const [project, setProject] = useState<ProjectType | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -70,7 +28,10 @@ export default function ProjectPage({ params }: { params: Promise<{ id: string }
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+        <div className="flex flex-col items-center gap-4">
+          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+          <p className="text-gray-400">Loading project details...</p>
+        </div>
       </div>
     );
   }
@@ -78,7 +39,15 @@ export default function ProjectPage({ params }: { params: Promise<{ id: string }
   if (!project) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <p className="text-gray-400">Project not found</p>
+        <div className="text-center">
+          <p className="text-gray-400 mb-4">Project not found</p>
+          <button
+            onClick={() => router.push('/projects')}
+            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            Back to Projects
+          </button>
+        </div>
       </div>
     );
   }
