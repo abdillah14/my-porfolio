@@ -1,6 +1,6 @@
 // components/Hero.tsx
 import Link from 'next/link';
-import { ArrowRight, Download, Github, Linkedin, Mail, Code, Sparkles, MousePointer } from 'lucide-react';
+import { ArrowRight, Download, Github, Linkedin, Mail, Code, Sparkles, MousePointer,Twitter } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -91,7 +91,12 @@ const Hero = () => {
                 rel="noopener noreferrer"
               >
                 <Linkedin className="w-5 h-5 text-blue-400 group-hover:text-blue-300" />
-              </a>
+                          </a>
+                          <a href="https://x.com/Abdillahally10" className="group p-2 bg-gray-800/30 rounded-lg hover:bg-gray-700/50 transition-all duration-200"
+                target="_blank"
+                              rel="noopener noreferrer">
+                              <Twitter className="w-5 h-5 text-blue-400 group-hover:text-blue-300" />
+                </a>
             </div>
           </div>
         </div>
