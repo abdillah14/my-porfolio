@@ -18,8 +18,8 @@ const projects = [
   },
   {
     id: '3',
-    title: 'Juridic law',
-    description: 'Mobile-first application for tracking workouts, nutrition, and health metrics.',
+    title: 'Yako law',
+    description: 'Specialized in comparative law across East Africa and international legal systems.',
     tags: ['Next.js', 'Convex', 'langChain', 'Gemini'],
     likes: 35,
   },

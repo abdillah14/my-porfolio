@@ -76,7 +76,7 @@ const Hero = () => {
               </a>
               
               <a
-                href="https://github.com/abdillahally"
+                href="https://github.com/abdillah14"
                 className="group p-2 bg-gray-800/30 rounded-lg hover:bg-gray-700/50 transition-all duration-200"
                 target="_blank"
                 rel="noopener noreferrer"
