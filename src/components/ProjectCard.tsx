@@ -77,23 +77,7 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
           {project.description}
         </p>
 
-        {/* Tags */}
-        {/* <div className="flex flex-wrap gap-1.5 mb-4">
-          {project?.techStack.slice(0, 3).map((tech: string) => (
-            <span 
-              key={tech} 
-              className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300"
-            >
-              {tech}
-            </span>
-          ))}
-          {project.techStack.length > 3 && (
-            <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400">
-              +{project.techStack.length - 3}
-            </span>
-          )}
-        </div> */}
-        {/* Tags */}
+        
 <div className="flex flex-wrap gap-1.5 mb-4">
   {(project?.techStack ?? []).slice(0, 3).map((tech: string) => (
     <span

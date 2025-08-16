@@ -1,6 +1,5 @@
 // components/FeaturedProjects.tsx
 import ProjectCard from '@/components/ProjectCard';
-import { projects } from '@/data/projects';
 import { ProjectType } from '@/types/project';
 
 

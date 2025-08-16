@@ -41,16 +41,7 @@ const Technologies = () => {
               <div className="w-40 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent rounded-full animate-pulse"></div>
             </div>
           </div>
-        {/* Section Header */}
-        {/* <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            Technologies I Work With
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
-          <p className="text-gray-400 mt-4 max-w-xl mx-auto">
-            Tools and frameworks I use to build high-quality, scalable, and modern applications.
-          </p>
-        </div> */}
+       
         
         {/* Technology Cards */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">

@@ -79,14 +79,7 @@ export default function ContactPage() {
               <div className="w-40 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent rounded-full animate-pulse"></div>
             </div>
           </div>
-        {/* Header */}
-        {/* <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold mb-4">Get In Touch</h1>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            Have a project in mind or want to discuss potential opportunities? Feel free to reach out!
-          </p>
-        </div> */}
-
+        
         <div className="max-w-4xl mx-auto grid lg:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div>
