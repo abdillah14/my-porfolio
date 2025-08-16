@@ -28,7 +28,9 @@ const ProjectFilter = ({ projects }: { projects: ProjectType[] }) => {
   }, [projects, activeCategory, sortBy]);
 
   return (
-    <>
+      <section>
+          <div className='container mx-auto px-4'>
+              
       {/* Filter Controls */}
       <div className="flex flex-col md:flex-row gap-4 mb-8 items-center justify-between">
         <div className="flex flex-wrap gap-2">
@@ -70,7 +72,8 @@ const ProjectFilter = ({ projects }: { projects: ProjectType[] }) => {
           <p className="text-gray-400">No projects found for the selected category.</p>
         </div>
       )}
-    </>
+          </div>
+    </section>
   );
 };
 

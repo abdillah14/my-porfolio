@@ -36,7 +36,7 @@ const Footer = () => {
               href="/" 
               className="group text-2xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent hover:from-blue-300 hover:via-purple-400 hover:to-pink-400 transition-all duration-300"
             >
-              Abdillah Ally
+              &lt; Abdillah /&gt;
             </Link>
             <div className="flex items-center justify-center md:justify-start mt-3 text-gray-400">
               <Code2 className="w-4 h-4 mr-2 text-blue-400" />
