@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Hero />
       <AboutPage />
-      <ProjectFilter projects={projects} />
+      <FeaturedProjects projects={projects} />
       <ContactPage />
     </>
   );

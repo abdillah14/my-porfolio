@@ -1,43 +1,33 @@
 // components/FeaturedProjects.tsx
 import ProjectCard from '@/components/ProjectCard';
+import { projects } from '@/data/projects';
+import { ProjectType } from '@/types/project';
 
-const projects = [
-  {
-    id: '1',
-    title: 'KuwaSafe',
-    description: 'Turn your code into full unit tests in a few seconds with KuwaSafe.',
-    tags: ['Next.js', 'Convex', 'Langchain', 'gemini'],
-    likes: 42,
-  },
-  {
-    id: '2',
-    title: 'Tafiti IQ',
-    description: 'Connect your SQL database and explore insights using plain English. No SQL expertise required - just ask questions and get instant visualizations.',
-    tags: ['Next.js', 'MySQl', 'convex', 'langchain'],
-    likes: 28,
-  },
-  {
-    id: '3',
-    title: 'Yako law',
-    description: 'Specialized in comparative law across East Africa and international legal systems.',
-    tags: ['Next.js', 'Convex', 'langChain', 'Gemini'],
-    likes: 35,
-  },
-];
 
-const FeaturedProjects = () => {
+const FeaturedProjects = ({ projects }: { projects: ProjectType[] }) => {
+  
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-20">
+            <div className="inline-block">
+              <h1 className="text-3xl lg:text-4xl font-black mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent relative">
+              Featured Projects
+                <div className="absolute -top-2 -left-2 w-full h-full bg-gradient-to-r from-blue-400/20 via-purple-400/20 to-cyan-400/20 blur-2xl -z-10"></div>
+              </h1>
+            </div>
+            <p className="text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed font-light">
             Here are some of my recent projects that showcase my skills and expertise
-          </p>
+            </p>
+            <div className="flex justify-center mt-8">
+              <div className="w-40 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent rounded-full animate-pulse"></div>
+            </div>
         </div>
         
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
+          {projects.slice(0, 3).map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>

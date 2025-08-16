@@ -64,13 +64,28 @@ export default function ContactPage() {
   return (
     <section className="py-20" id='contact'>
       <div className="container mx-auto px-4">
+          {/* Header */}
+          <div className="text-center mb-20">
+            <div className="inline-block">
+              <h1 className="text-3xl lg:text-4xl font-black mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent relative">
+              Get In Touch
+                <div className="absolute -top-2 -left-2 w-full h-full bg-gradient-to-r from-blue-400/20 via-purple-400/20 to-cyan-400/20 blur-2xl -z-10"></div>
+              </h1>
+            </div>
+            <p className="text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed font-light">
+            Have a project in mind or want to discuss potential opportunities? Feel free to reach out!
+            </p>
+            <div className="flex justify-center mt-8">
+              <div className="w-40 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent rounded-full animate-pulse"></div>
+            </div>
+          </div>
         {/* Header */}
-        <div className="text-center mb-16">
+        {/* <div className="text-center mb-16">
           <h1 className="text-4xl font-bold mb-4">Get In Touch</h1>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Have a project in mind or want to discuss potential opportunities? Feel free to reach out!
           </p>
-        </div>
+        </div> */}
 
         <div className="max-w-4xl mx-auto grid lg:grid-cols-2 gap-12">
           {/* Contact Info */}
