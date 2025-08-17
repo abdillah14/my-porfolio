@@ -96,7 +96,7 @@ export const projects: ProjectType[] = [
   },
   {
     id: '4',
-    title: 'Real Estate Marketplace',
+    title: 'Fursa Link',
     description: 'Property listing platform with interactive maps and virtual tour capabilities.',
     longDescription: 'A modern real estate platform that connects buyers, sellers, and agents through an intuitive interface featuring advanced search capabilities, interactive maps, and immersive virtual property tours.',
     techStack: ['Next.js', 'Mapbox', 'Node.js', 'MongoDB', 'Stripe', 'WebRTC'],
@@ -125,7 +125,7 @@ export const projects: ProjectType[] = [
   },
   {
     id: '5',
-    title: 'Social Media Analytics',
+    title: 'Nyaraka Docs',
     description: 'Dashboard for tracking social media performance across multiple platforms.',
     longDescription: 'A comprehensive analytics dashboard that aggregates data from multiple social media platforms, providing insights into engagement, reach, and audience demographics through interactive visualizations and automated reports.',
     techStack: ['React', 'D3.js', 'Express.js', 'MongoDB', 'Socket.io', 'Chart.js'],

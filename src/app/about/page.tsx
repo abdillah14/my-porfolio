@@ -1,5 +1,6 @@
 // app/about/page.tsx
 import Image from 'next/image';
+import pic from "../../../public/profil.jpg"
 
 export default function AboutPage() {
   return (
@@ -44,7 +45,7 @@ export default function AboutPage() {
                       <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden border-2 border-transparent  p-0.5 shadow-2xl mb-8 group-hover:scale-105 transition-transform duration-500">
                         <div className="w-full h-full rounded-2xl overflow-hidden">
                           <Image
-                            src="/images/profile.jpg"
+                            src={pic}
                             alt="Abdillah Ally"
                             fill
                             className="object-cover"
@@ -135,14 +136,14 @@ export default function AboutPage() {
                     <div className="relative pl-8 border-l-2 border-gradient-to-b from-purple-500 to-cyan-500">
                       <div className="absolute -left-2 top-0 w-4 h-4 bg-purple-500 rounded-full"></div>
                       <p className="font-light">
-                        My academic foundation at <span className="text-blue-400 font-semibold">International University of Equator</span> in Software Engineering equipped me with deep expertise in algorithms, distributed systems, and enterprise architecture. This knowledge has empowered me to collaborate with both disruptive startups and Fortune 500 enterprises.
+                        My academic foundation at <span className="text-blue-400 font-semibold">International University of Equator</span> in Software Engineering equipped me with deep expertise in algorithms, distributed systems, and enterprise architecture.
                       </p>
                     </div>
                     
                     <div className="relative pl-8 border-l-2 border-gradient-to-b from-cyan-500 to-blue-500">
                       <div className="absolute -left-2 top-0 w-4 h-4 bg-cyan-500 rounded-full"></div>
                       <p className="font-light">
-                        I'm passionate about leveraging emerging technologies like <span className="text-purple-400 font-semibold">React, Next.js, TypeScript, and cloud-native infrastructure</span> to build high-performance, user-centric applications that deliver exceptional experiences and measurable ROI.
+                        I'm passionate about leveraging emerging technologies like <span className="text-purple-400 font-semibold">React, Next.js, TypeScript, and Nodejs as backend</span> to build high-performance, user-centric applications that deliver exceptional experiences and measurable ROI.
                       </p>
                     </div>
                   </div>
