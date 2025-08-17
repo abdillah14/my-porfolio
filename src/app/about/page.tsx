@@ -93,7 +93,7 @@ export default function AboutPage() {
                       </div>
                       <span className="font-medium">Email Me</span>
                     </a>
-                    <a href="https://linkedin.com/in/johndoe" 
+                    <a href="https://www.linkedin.com/in/abdillah-ally-50a347269" 
                        className="flex items-center gap-4 p-4 rounded-xl bg-gray-900/30 hover:bg-gray-900/60 text-gray-300 hover:text-blue-400 transition-all duration-300 border border-transparent hover:border-blue-500/30 group/link">
                       <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center text-lg group-hover/link:scale-110 transition-transform">
                         💼

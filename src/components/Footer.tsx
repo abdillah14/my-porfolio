@@ -14,7 +14,7 @@ const Footer = () => {
     },
     {
       name: 'LinkedIn', 
-      href: 'https://linkedin.com/in/abdillahally',
+      href: 'https://www.linkedin.com/in/abdillah-ally-50a347269/',
       icon: Linkedin,
       hoverColor: 'hover:text-blue-400'
     },

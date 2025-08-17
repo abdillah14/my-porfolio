@@ -108,7 +108,7 @@ export default function ContactPage() {
               <div className="flex space-x-4">
                 {[
                   { icon: Github, href: 'https://github.com/abdillah14', hover: 'hover:text-gray-300' },
-                  { icon: Linkedin, href: '#', hover: 'hover:text-blue-500' },
+                  { icon: Linkedin, href: 'https://www.linkedin.com/in/abdillah-ally-50a347269', hover: 'hover:text-blue-500' },
                   { icon: Twitter, href: 'https://x.com/Abdillahally10', hover: 'hover:text-blue-400' },
                   // { icon: Dribbble, href: '#', hover: 'hover:text-pink-500' },
                 ].map(({ icon: Icon, href, hover }, i) => (

@@ -67,7 +67,7 @@ const Hero = () => {
             <span className="text-gray-400 text-sm font-medium">Quick Actions:</span>
             <div className="flex items-center gap-4">
               <a
-                href="/resume.pdf"
+                href="/data/resume.pdf"
                 className="group flex items-center gap-2 px-4 py-2 bg-gray-800/30 rounded-lg hover:bg-gray-700/50 transition-all duration-200"
                 download
               >
@@ -85,7 +85,7 @@ const Hero = () => {
               </a>
               
               <a
-                href="https://linkedin.com/in/abdillahally"
+                href="https://www.linkedin.com/in/abdillah-ally-50a347269"
                 className="group p-2 bg-gray-800/30 rounded-lg hover:bg-gray-700/50 transition-all duration-200"
                 target="_blank"
                 rel="noopener noreferrer"
