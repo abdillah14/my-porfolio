@@ -55,7 +55,7 @@ const ProjectDetail = ({ project }: { project: ProjectType }) => {
                 Live Demo
               </a>
             )}
-            {project.githubLink && (
+            {/* {project.githubLink && (
               <a 
                 href={project.githubLink} 
                 target="_blank" 
@@ -64,7 +64,7 @@ const ProjectDetail = ({ project }: { project: ProjectType }) => {
               >
                 GitHub
               </a>
-            )}
+            )} */}
           </div>
         </div>
       </motion.div>
