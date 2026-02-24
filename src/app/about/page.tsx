@@ -1,6 +1,7 @@
 // app/about/page.tsx
 import Image from 'next/image';
 import pic from "../../../public/profil.jpg"
+import Link from 'next/link';
 
 export default function AboutPage() {
   return (
@@ -52,14 +53,14 @@ export default function AboutPage() {
                           />
                         </div>
                       </div>
-                      
+
                       {/* Profile Info */}
                       <div className="text-center relative z-10">
                         <h2 className="text-3xl font-bold mb-2 text-white">Abdillah Ally</h2>
                         <div className="inline-block px-4 py-2 bg-gradient-to-r from-purple-500/20 to-blue-500/20 backdrop-blur-sm rounded-full border border-purple-500/30 mb-4">
                           <p className="text-purple-300 font-medium">Software Engineer & AI Developer</p>
                         </div>
-                        
+
                         {/* Stats */}
                         <div className="grid grid-cols-2 gap-4 mt-6">
                           <div className="bg-gray-800/50 backdrop-blur-sm p-4 rounded-xl border border-gray-700/30">
@@ -124,7 +125,7 @@ export default function AboutPage() {
                     </div>
                     <h2 className="text-4xl font-bold text-white">My Journey</h2>
                   </div>
-                  
+
                   <div className="space-y-8 text-gray-300 leading-relaxed">
                     <div className="relative pl-8 border-l-2 border-gradient-to-b from-blue-500 to-purple-500">
                       <div className="absolute -left-2 top-0 w-4 h-4 bg-blue-500 rounded-full"></div>
@@ -132,14 +133,14 @@ export default function AboutPage() {
                         With over <span className="text-white font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">3 years of dedicated experience</span> in software engineering, I specialize in architecting scalable web applications and crafting innovative digital solutions that drive exponential business growth.
                       </p>
                     </div>
-                    
+
                     <div className="relative pl-8 border-l-2 border-gradient-to-b from-purple-500 to-cyan-500">
                       <div className="absolute -left-2 top-0 w-4 h-4 bg-purple-500 rounded-full"></div>
                       <p className="font-light">
                         My academic foundation at <span className="text-blue-400 font-semibold">International University of Equator</span> in Software Engineering equipped me with deep expertise in algorithms, distributed systems, and enterprise architecture.
                       </p>
                     </div>
-                    
+
                     <div className="relative pl-8 border-l-2 border-gradient-to-b from-cyan-500 to-blue-500">
                       <div className="absolute -left-2 top-0 w-4 h-4 bg-cyan-500 rounded-full"></div>
                       <p className="font-light">
@@ -150,7 +151,7 @@ export default function AboutPage() {
                 </div>
               </div>
 
-           
+
 
               {/* CTA Section */}
               <div className="relative group">
@@ -164,19 +165,25 @@ export default function AboutPage() {
                       I'm always excited to collaborate on groundbreaking projects and transform visionary ideas into reality. Let's create the future together.
                     </p>
                     <div className="flex flex-wrap justify-center gap-6">
-                      <button className="group/btn relative px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-2xl shadow-lg hover:shadow-blue-500/50 transition-all duration-300 overflow-hidden">
-                        <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-purple-700 translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300"></div>
+                      <Link
+                        href="/projects"
+                        className="group flex items-center justify-center gap-3 px-10 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl font-semibold text-lg hover:from-blue-500 hover:to-purple-500 transition-all duration-300 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:scale-105"
+                      >
+                        {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-purple-700 translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300"></div> */}
                         <span className="relative flex items-center gap-2">
                           View My Work
                           <span className="group-hover/btn:translate-x-1 transition-transform">→</span>
                         </span>
-                      </button>
-                      <button className="group/btn relative px-8 py-4 border-2 border-purple-500/50 text-purple-300 hover:text-white font-semibold rounded-2xl hover:bg-purple-500/10 transition-all duration-300">
+                      </Link>
+                      <Link
+                        href="/contact"
+                        className="group flex items-center justify-center gap-3 px-10 py-4 bg-gray-800/50 backdrop-blur-sm rounded-2xl font-semibold text-lg hover:bg-gray-700/50 transition-all duration-300 border border-gray-600/50 hover:border-gray-500"
+                      >
                         <span className="flex items-center gap-2">
                           Get In Touch
                           <span className="group-hover/btn:scale-110 transition-transform">💬</span>
                         </span>
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
