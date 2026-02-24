@@ -58,7 +58,7 @@ export default function ContactPage() {
               <input
                 type="hidden"
                 name="_next"
-                value="https://YOUR_DOMAIN/thank-you"
+                value="https://abdillah-ally.vercel.app/contact"
               />
 
               {/* Name */}
