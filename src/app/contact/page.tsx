@@ -1,18 +1,49 @@
 'use client';
 
+import { useState } from 'react';
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter, User, Send } from 'lucide-react';
 
 export default function ContactPage() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [statusMessage, setStatusMessage] = useState('');
+
   const inputClasses =
     `w-full bg-gray-800 border border-gray-700
      rounded-lg pl-12 pr-4 py-3
      focus:outline-none focus:ring-2 focus:ring-blue-500
      text-gray-200 placeholder-gray-500`;
 
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setStatusMessage('');
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: { Accept: 'application/json' },
+      });
+
+      if (response.ok) {
+        setStatusMessage('✅ Message sent successfully!');
+        form.reset();
+      } else {
+        setStatusMessage('❌ Failed to send message. Please try again.');
+      }
+    } catch (error) {
+      setStatusMessage('❌ An error occurred. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section className="py-20" id="contact">
       <div className="container mx-auto px-4">
-
         {/* Header */}
         <div className="text-center mb-20">
           <h1 className="text-3xl lg:text-4xl font-black mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
@@ -28,7 +59,6 @@ export default function ContactPage() {
           {/* Contact Info */}
           <div>
             <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
-
             <div className="space-y-6">
               <Info icon={Mail} title="Email" text="abdillahally378@gmail.com" />
               <Info icon={Phone} title="Phone" text="+257 69 088 722" />
@@ -47,6 +77,7 @@ export default function ContactPage() {
             <h2 className="text-2xl font-bold mb-6">Send me a message</h2>
 
             <form
+              onSubmit={handleSubmit}
               action="https://formsubmit.co/abdillahally378@gmail.com"
               method="POST"
               className="space-y-6"
@@ -55,11 +86,6 @@ export default function ContactPage() {
               <input type="hidden" name="_subject" value="New Portfolio Contact Message" />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
-              <input
-                type="hidden"
-                name="_next"
-                value="https://abdillah-ally.vercel.app/contact"
-              />
 
               {/* Name */}
               <div className="relative">
@@ -100,14 +126,32 @@ export default function ContactPage() {
               {/* Submit */}
               <button
                 type="submit"
-                className="w-full flex items-center justify-center gap-2
+                disabled={isSubmitting}
+                className={`w-full flex items-center justify-center gap-2
                            bg-gradient-to-r from-blue-500 to-purple-600
                            text-white font-medium py-3 rounded-lg
-                           hover:opacity-90 transition"
+                           hover:opacity-90 transition
+                           disabled:opacity-50`}
               >
-                <Send className="w-5 h-5" />
-                Send Message
+                {isSubmitting ? (
+                  <span className="flex items-center gap-2">
+                    <Send className="w-5 h-5 animate-spin" />
+                    Sending...
+                  </span>
+                ) : (
+                  <span className="flex items-center gap-2">
+                    <Send className="w-5 h-5" />
+                    Send Message
+                  </span>
+                )}
               </button>
+
+              {/* Status Toast */}
+              {statusMessage && (
+                <div className="p-4 rounded-lg text-white bg-green-600 mt-4">
+                  {statusMessage}
+                </div>
+              )}
             </form>
           </div>
 
@@ -118,7 +162,6 @@ export default function ContactPage() {
 }
 
 /* Helpers */
-
 function Info({ icon: Icon, title, text }: any) {
   return (
     <div className="flex items-start">
