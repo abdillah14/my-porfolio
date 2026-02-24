@@ -91,7 +91,7 @@ const Hero = () => {
           {/* Right: Stats */}
           <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center mt-10 lg:mt-0">
             <StatCard value="5+" label="Projects Completed" color="text-blue-400" />
-            <StatCard value="2+" label="Years Experience" color="text-purple-400" />
+            <StatCard value="3+" label="Years Experience" color="text-purple-400" />
             <StatCard value="24/7" label="Coffee Powered" color="text-cyan-400" />
           </div>
 
