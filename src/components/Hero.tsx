@@ -1,10 +1,9 @@
-// components/Hero.tsx
 import Link from 'next/link';
 import { ArrowRight, Download, Github, Linkedin, Mail, Code, Sparkles, MousePointer, Twitter } from 'lucide-react';
-// import pdf from "../data/resume"
+
 const Hero = () => {
   return (
-    <section className="relative flex items-center overflow-hidden ">
+    <section className="relative flex items-center overflow-hidden py-24">
       {/* Animated background grid */}
       <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
 
@@ -12,140 +11,113 @@ const Hero = () => {
       <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
 
-      <div className="container mx-auto px-4 py-18 z-10 grid grid-cols-1 md:grid-cols-2">
-        <div className="max-w-4xl">
-          {/* Greeting with icon */}
-          <div className="flex items-center gap-2 mb-6">
-            <Sparkles className="w-6 h-6 text-yellow-400 animate-spin" />
-            <span className="text-lg text-gray-300 font-medium">Welcome to my digital space</span>
-          </div>
+      <div className="container mx-auto px-4 z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
-          {/* Main heading */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="block text-gray-100">Hello, I'm</span>
-            <span className="block bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent mt-2 animate-gradient bg-[length:200%_auto]">
-              Abdillah Ally
-            </span>
-          </h1>
+          {/* Left: Intro Text */}
+          <div className="lg:col-span-7 space-y-6">
+            {/* Greeting */}
+            <div className="flex items-center gap-3">
+              <Sparkles className="w-6 h-6 text-yellow-400 animate-spin" />
+              <span className="text-lg text-gray-300 font-medium">Welcome to my digital space</span>
+            </div>
 
-          {/* Subtitle with icon */}
-          <div className="flex items-center gap-3 mb-8">
-            <Code className="w-8 h-8 text-blue-400" />
-            <h2 className="text-2xl md:text-4xl font-semibold text-gray-200">
-              Software Engineer & AI Developer
-            </h2>
-          </div>
+            {/* Heading */}
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-gray-100">
+              <span className="block">Hello, I'm</span>
+              <span className="block mt-2 bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
+                Abdillah Ally
+              </span>
+            </h1>
 
-          {/* Enhanced description */}
-          <p className="text-xl text-gray-300 mb-12 leading-relaxed max-w-2xl">
-            I craft exceptional digital experiences that seamlessly blend cutting-edge technology
-            with intuitive design. Specializing in modern JavaScript ecosystems, AI integration,
-            and scalable cloud architectures.
-          </p>
+            {/* Subtitle */}
+            <div className="flex items-center gap-3 text-gray-200">
+              <Code className="w-8 h-8 text-blue-400" />
+              <h2 className="text-xl md:text-3xl font-semibold">
+                Software Engineer & AI Developer
+              </h2>
+            </div>
 
-          {/* Enhanced CTA buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 mb-16">
-            <Link
-              href="/projects"
-              className="group flex items-center justify-center gap-3 px-10 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl font-semibold text-lg hover:from-blue-500 hover:to-purple-500 transition-all duration-300 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:scale-105"
-            >
-              <span>Explore My Work</span>
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
+            {/* Description */}
+            <p className="text-gray-300 text-lg md:text-xl max-w-2xl leading-relaxed mt-4">
+              I craft exceptional digital experiences that seamlessly blend cutting-edge technology
+              with intuitive design. Specializing in modern JavaScript ecosystems, AI integration,
+              and scalable cloud architectures.
+            </p>
 
-            <Link
-              href="/contact"
-              className="group flex items-center justify-center gap-3 px-10 py-4 bg-gray-800/50 backdrop-blur-sm rounded-2xl font-semibold text-lg hover:bg-gray-700/50 transition-all duration-300 border border-gray-600/50 hover:border-gray-500"
-            >
-              <Mail className="w-5 h-5" />
-              <span>Get In Touch</span>
-            </Link>
-          </div>
-
-          {/* Quick actions */}
-          <div className="flex items-center gap-6">
-            <span className="text-gray-400 text-sm font-medium">Quick Actions:</span>
-            <div className="flex items-center gap-4">
-              <a
-                href="/resume.pdf"
-                className="group flex items-center gap-2 px-4 py-2 bg-gray-800/30 rounded-lg hover:bg-gray-700/50 transition-all duration-200"
-                aria-label="Download resume as PDF"
-                target="_blank"
-                rel="noopener noreferrer"
-                // download
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 mt-6">
+              <Link
+                href="/projects"
+                className="group flex items-center justify-center gap-2 px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-lg font-semibold rounded-2xl hover:scale-105 hover:from-blue-500 hover:to-purple-500 transition-all shadow-lg shadow-blue-500/25"
               >
-                <Download className="w-4 h-4 text-green-400" />
-                <span className="text-sm text-gray-300 group-hover:text-white">Resume</span>
-              </a>
-
-              <a
-                href="https://github.com/abdillah14"
-                className="group p-2 bg-gray-800/30 rounded-lg hover:bg-gray-700/50 transition-all duration-200"
-                target="_blank"
-                rel="noopener noreferrer"
+                Explore My Work
+                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+              </Link>
+              <Link
+                href="/contact"
+                className="group flex items-center justify-center gap-2 px-8 py-3 bg-gray-800/50 backdrop-blur-sm rounded-2xl text-lg font-semibold hover:bg-gray-700/50 transition-all border border-gray-600/50 hover:border-gray-500"
               >
-                <Github className="w-5 h-5 text-gray-300 group-hover:text-white" />
-              </a>
+                <Mail className="w-5 h-5" />
+                Get In Touch
+              </Link>
+            </div>
 
-              <a
-                href="https://www.linkedin.com/in/abdillah-ally-50a347269"
-                className="group p-2 bg-gray-800/30 rounded-lg hover:bg-gray-700/50 transition-all duration-200"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Linkedin className="w-5 h-5 text-blue-400 group-hover:text-blue-300" />
-              </a>
-              <a href="https://x.com/Abdillahally10" className="group p-2 bg-gray-800/30 rounded-lg hover:bg-gray-700/50 transition-all duration-200"
-                target="_blank"
-                rel="noopener noreferrer">
-                <Twitter className="w-5 h-5 text-blue-400 group-hover:text-blue-300" />
-              </a>
+            {/* Quick Actions */}
+            <div className="flex items-center gap-4 mt-6">
+              <span className="text-gray-400 font-medium text-sm">Quick Actions:</span>
+              <div className="flex items-center gap-3">
+                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"
+                   className="group flex items-center gap-2 px-3 py-2 bg-gray-800/30 rounded-lg hover:bg-gray-700/50 transition-all">
+                  <Download className="w-4 h-4 text-green-400" />
+                  <span className="text-sm text-gray-300 group-hover:text-white">Resume</span>
+                </a>
+                <a href="https://github.com/abdillah14" target="_blank" rel="noopener noreferrer"
+                   className="group p-2 bg-gray-800/30 rounded-lg hover:bg-gray-700/50 transition-all">
+                  <Github className="w-5 h-5 text-gray-300 group-hover:text-white" />
+                </a>
+                <a href="https://www.linkedin.com/in/abdillah-ally-50a347269" target="_blank" rel="noopener noreferrer"
+                   className="group p-2 bg-gray-800/30 rounded-lg hover:bg-gray-700/50 transition-all">
+                  <Linkedin className="w-5 h-5 text-blue-400 group-hover:text-blue-300" />
+                </a>
+                <a href="https://x.com/Abdillahally10" target="_blank" rel="noopener noreferrer"
+                   className="group p-2 bg-gray-800/30 rounded-lg hover:bg-gray-700/50 transition-all">
+                  <Twitter className="w-5 h-5 text-blue-400 group-hover:text-blue-300" />
+                </a>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Stats or highlights section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-60 max-w-2xl">
-          <div className="text-center">
-            <div className="text-3xl font-bold text-blue-400 mb-2">5+</div>
-            <div className="text-gray-400 text-sm">Projects Completed</div>
+          {/* Right: Stats */}
+          <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center mt-10 lg:mt-0">
+            <StatCard value="5+" label="Projects Completed" color="text-blue-400" />
+            <StatCard value="2+" label="Years Experience" color="text-purple-400" />
+            <StatCard value="24/7" label="Coffee Powered" color="text-cyan-400" />
           </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-purple-400 mb-2">2+</div>
-            <div className="text-gray-400 text-sm">Years Experience</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-cyan-400 mb-2">24/7</div>
-            <div className="text-gray-400 text-sm">Coffee Powered</div>
-          </div>
+
         </div>
       </div>
 
-      {/* Enhanced scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 ">
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
         <div className="flex flex-col items-center gap-2 animate-bounce">
           <MousePointer className="w-6 h-6 text-gray-400" />
           <span className="text-xs text-gray-500 font-medium">Scroll to explore</span>
           <div className="w-[2px] h-8 bg-gradient-to-b from-gray-400 to-transparent rounded-full" />
         </div>
       </div>
-
-      {/* Custom CSS for gradient animation */}
-      {/* <style jsx>{`
-        @keyframes gradient {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-        }
-        .animate-gradient {
-          animation: gradient 3s ease infinite;
-        }
-        .bg-grid-white\\/\\[0\\.02\\] {
-          background-image: radial-gradient(circle, white 1px, transparent 1px);
-        }
-      `}</style> */}
     </section>
   );
 };
 
 export default Hero;
+
+/* Helper component for stats */
+function StatCard({ value, label, color }: { value: string; label: string; color: string }) {
+  return (
+    <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-2xl backdrop-blur-sm">
+      <div className={`text-3xl font-bold mb-2 ${color}`}>{value}</div>
+      <div className="text-gray-400 text-sm">{label}</div>
+    </div>
+  );
+}
