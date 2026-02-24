@@ -1,14 +1,8 @@
 'use client';
 
-export const dynamic = 'force-dynamic';
-
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter, User, Send } from 'lucide-react';
-import { useSearchParams } from 'next/navigation';
 
 export default function ContactPage() {
-  const searchParams = useSearchParams();
-  const isSuccess = searchParams.get('success') === 'true';
-
   const inputClasses =
     `w-full bg-gray-800 border border-gray-700
      rounded-lg pl-12 pr-4 py-3
@@ -19,6 +13,7 @@ export default function ContactPage() {
     <section className="py-20" id="contact">
       <div className="container mx-auto px-4">
 
+        {/* Header */}
         <div className="text-center mb-20">
           <h1 className="text-3xl lg:text-4xl font-black mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
             Get In Touch
@@ -30,9 +25,10 @@ export default function ContactPage() {
 
         <div className="max-w-4xl mx-auto grid lg:grid-cols-2 gap-12">
 
-          {/* Info */}
+          {/* Contact Info */}
           <div>
             <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
+
             <div className="space-y-6">
               <Info icon={Mail} title="Email" text="abdillahally378@gmail.com" />
               <Info icon={Phone} title="Phone" text="+257 69 088 722" />
@@ -46,45 +42,62 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Form */}
+          {/* Contact Form */}
           <div>
             <h2 className="text-2xl font-bold mb-6">Send me a message</h2>
-
-            {isSuccess && (
-              <div className="mb-6 p-4 bg-green-900/30 border border-green-700 rounded-lg text-green-400">
-                ✅ Message sent successfully! I’ll get back to you soon.
-              </div>
-            )}
 
             <form
               action="https://formsubmit.co/abdillahally378@gmail.com"
               method="POST"
               className="space-y-6"
             >
+              {/* FormSubmit config */}
               <input type="hidden" name="_subject" value="New Portfolio Contact Message" />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
               <input
                 type="hidden"
                 name="_next"
-                value="https://abdillah-ally.vercel.app/contact?success=true"
+                value="https://YOUR_DOMAIN/thank-you"
               />
 
+              {/* Name */}
               <div className="relative">
                 <User className="absolute left-4 top-3.5 w-5 h-5 text-gray-500" />
-                <input name="name" required placeholder="Your name" className={inputClasses} />
+                <input
+                  name="name"
+                  required
+                  placeholder="Your name"
+                  className={inputClasses}
+                />
               </div>
 
+              {/* Email */}
               <div className="relative">
                 <Mail className="absolute left-4 top-3.5 w-5 h-5 text-gray-500" />
-                <input type="email" name="email" required placeholder="your.email@example.com" className={inputClasses} />
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="your.email@example.com"
+                  className={inputClasses}
+                />
               </div>
 
+              {/* Message */}
               <div className="relative">
                 <Send className="absolute left-4 top-3.5 w-5 h-5 text-gray-500" />
-                <textarea name="message" rows={5} minLength={10} required placeholder="Your message..." className={inputClasses} />
+                <textarea
+                  name="message"
+                  rows={5}
+                  minLength={10}
+                  required
+                  placeholder="Your message here..."
+                  className={inputClasses}
+                />
               </div>
 
+              {/* Submit */}
               <button
                 type="submit"
                 className="w-full flex items-center justify-center gap-2
@@ -97,6 +110,7 @@ export default function ContactPage() {
               </button>
             </form>
           </div>
+
         </div>
       </div>
     </section>
