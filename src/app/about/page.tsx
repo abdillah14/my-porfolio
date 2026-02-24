@@ -129,7 +129,7 @@ export default function AboutPage() {
                     <div className="relative pl-8 border-l-2 border-gradient-to-b from-blue-500 to-purple-500">
                       <div className="absolute -left-2 top-0 w-4 h-4 bg-blue-500 rounded-full"></div>
                       <p className="text-lg font-light">
-                        With over <span className="text-white font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">2 years of dedicated experience</span> in software engineering, I specialize in architecting scalable web applications and crafting innovative digital solutions that drive exponential business growth.
+                        With over <span className="text-white font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">3 years of dedicated experience</span> in software engineering, I specialize in architecting scalable web applications and crafting innovative digital solutions that drive exponential business growth.
                       </p>
                     </div>
                     
