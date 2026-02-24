@@ -1,5 +1,7 @@
 'use client';
 
+export const dynamic = 'force-dynamic';
+
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter, User, Send } from 'lucide-react';
 import { useSearchParams } from 'next/navigation';
 
@@ -17,7 +19,6 @@ export default function ContactPage() {
     <section className="py-20" id="contact">
       <div className="container mx-auto px-4">
 
-        {/* Header */}
         <div className="text-center mb-20">
           <h1 className="text-3xl lg:text-4xl font-black mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
             Get In Touch
@@ -29,17 +30,15 @@ export default function ContactPage() {
 
         <div className="max-w-4xl mx-auto grid lg:grid-cols-2 gap-12">
 
-          {/* Contact Info */}
+          {/* Info */}
           <div>
             <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
-
             <div className="space-y-6">
               <Info icon={Mail} title="Email" text="abdillahally378@gmail.com" />
               <Info icon={Phone} title="Phone" text="+257 69 088 722" />
               <Info icon={MapPin} title="Location" text="Bujumbura, Burundi" />
             </div>
 
-            {/* Socials */}
             <div className="mt-10 flex gap-4">
               <Social href="https://github.com/abdillah14" icon={Github} />
               <Social href="https://www.linkedin.com/in/abdillah-ally-50a347269" icon={Linkedin} />
@@ -47,7 +46,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Contact Form */}
+          {/* Form */}
           <div>
             <h2 className="text-2xl font-bold mb-6">Send me a message</h2>
 
@@ -62,7 +61,6 @@ export default function ContactPage() {
               method="POST"
               className="space-y-6"
             >
-              {/* FormSubmit config */}
               <input type="hidden" name="_subject" value="New Portfolio Contact Message" />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
@@ -72,44 +70,21 @@ export default function ContactPage() {
                 value="https://abdillah-ally.vercel.app/contact?success=true"
               />
 
-              {/* Name */}
               <div className="relative">
                 <User className="absolute left-4 top-3.5 w-5 h-5 text-gray-500" />
-                <input
-                  type="text"
-                  name="name"
-                  required
-                  placeholder="Your name"
-                  className={inputClasses}
-                />
+                <input name="name" required placeholder="Your name" className={inputClasses} />
               </div>
 
-              {/* Email */}
               <div className="relative">
                 <Mail className="absolute left-4 top-3.5 w-5 h-5 text-gray-500" />
-                <input
-                  type="email"
-                  name="email"
-                  required
-                  placeholder="your.email@example.com"
-                  className={inputClasses}
-                />
+                <input type="email" name="email" required placeholder="your.email@example.com" className={inputClasses} />
               </div>
 
-              {/* Message */}
               <div className="relative">
                 <Send className="absolute left-4 top-3.5 w-5 h-5 text-gray-500" />
-                <textarea
-                  name="message"
-                  rows={5}
-                  required
-                  minLength={10}
-                  placeholder="Your message here..."
-                  className={inputClasses}
-                />
+                <textarea name="message" rows={5} minLength={10} required placeholder="Your message..." className={inputClasses} />
               </div>
 
-              {/* Submit */}
               <button
                 type="submit"
                 className="w-full flex items-center justify-center gap-2
@@ -128,7 +103,7 @@ export default function ContactPage() {
   );
 }
 
-/* ---------- Helpers ---------- */
+/* Helpers */
 
 function Info({ icon: Icon, title, text }: any) {
   return (
