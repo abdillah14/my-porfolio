@@ -78,7 +78,7 @@ export default function AboutPage() {
               </div>
 
               {/* Contact Card */}
-              <div className="relative group">
+              {/* <div className="relative group">
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-2xl blur-xl opacity-50 group-hover:opacity-70 transition-opacity"></div>
                 <div className="relative bg-gray-800/40 backdrop-blur-xl p-6 rounded-2xl border border-gray-700/30 shadow-xl">
                   <h3 className="font-bold mb-6 text-xl text-white flex items-center gap-2">
@@ -109,7 +109,7 @@ export default function AboutPage() {
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Right Side - Content */}
