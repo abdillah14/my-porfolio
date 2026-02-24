@@ -1,17 +1,17 @@
 // components/Hero.tsx
 import Link from 'next/link';
-import { ArrowRight, Download, Github, Linkedin, Mail, Code, Sparkles, MousePointer,Twitter } from 'lucide-react';
-
+import { ArrowRight, Download, Github, Linkedin, Mail, Code, Sparkles, MousePointer, Twitter } from 'lucide-react';
+// import pdf from "../data/resume"
 const Hero = () => {
   return (
     <section className="relative flex items-center overflow-hidden ">
       {/* Animated background grid */}
       <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
-      
+
       {/* Floating orbs for visual interest */}
       <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
-      
+
       <div className="container mx-auto px-4 py-18 z-10 grid grid-cols-1 md:grid-cols-2">
         <div className="max-w-4xl">
           {/* Greeting with icon */}
@@ -19,7 +19,7 @@ const Hero = () => {
             <Sparkles className="w-6 h-6 text-yellow-400 animate-spin" />
             <span className="text-lg text-gray-300 font-medium">Welcome to my digital space</span>
           </div>
-          
+
           {/* Main heading */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             <span className="block text-gray-100">Hello, I'm</span>
@@ -27,7 +27,7 @@ const Hero = () => {
               Abdillah Ally
             </span>
           </h1>
-          
+
           {/* Subtitle with icon */}
           <div className="flex items-center gap-3 mb-8">
             <Code className="w-8 h-8 text-blue-400" />
@@ -35,14 +35,14 @@ const Hero = () => {
               Software Engineer & AI Developer
             </h2>
           </div>
-          
+
           {/* Enhanced description */}
           <p className="text-xl text-gray-300 mb-12 leading-relaxed max-w-2xl">
-            I craft exceptional digital experiences that seamlessly blend cutting-edge technology 
-            with intuitive design. Specializing in modern JavaScript ecosystems, AI integration, 
+            I craft exceptional digital experiences that seamlessly blend cutting-edge technology
+            with intuitive design. Specializing in modern JavaScript ecosystems, AI integration,
             and scalable cloud architectures.
           </p>
-          
+
           {/* Enhanced CTA buttons */}
           <div className="flex flex-col sm:flex-row gap-6 mb-16">
             <Link
@@ -52,7 +52,7 @@ const Hero = () => {
               <span>Explore My Work</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
-            
+
             <Link
               href="/contact"
               className="group flex items-center justify-center gap-3 px-10 py-4 bg-gray-800/50 backdrop-blur-sm rounded-2xl font-semibold text-lg hover:bg-gray-700/50 transition-all duration-300 border border-gray-600/50 hover:border-gray-500"
@@ -61,20 +61,23 @@ const Hero = () => {
               <span>Get In Touch</span>
             </Link>
           </div>
-          
+
           {/* Quick actions */}
           <div className="flex items-center gap-6">
             <span className="text-gray-400 text-sm font-medium">Quick Actions:</span>
             <div className="flex items-center gap-4">
               <a
-                href="/data/resume.pdf"
+                href="/resume.pdf"
                 className="group flex items-center gap-2 px-4 py-2 bg-gray-800/30 rounded-lg hover:bg-gray-700/50 transition-all duration-200"
-                download
+                aria-label="Download resume as PDF"
+                target="_blank"
+                rel="noopener noreferrer"
+                // download
               >
                 <Download className="w-4 h-4 text-green-400" />
                 <span className="text-sm text-gray-300 group-hover:text-white">Resume</span>
               </a>
-              
+
               <a
                 href="https://github.com/abdillah14"
                 className="group p-2 bg-gray-800/30 rounded-lg hover:bg-gray-700/50 transition-all duration-200"
@@ -83,7 +86,7 @@ const Hero = () => {
               >
                 <Github className="w-5 h-5 text-gray-300 group-hover:text-white" />
               </a>
-              
+
               <a
                 href="https://www.linkedin.com/in/abdillah-ally-50a347269"
                 className="group p-2 bg-gray-800/30 rounded-lg hover:bg-gray-700/50 transition-all duration-200"
@@ -91,16 +94,16 @@ const Hero = () => {
                 rel="noopener noreferrer"
               >
                 <Linkedin className="w-5 h-5 text-blue-400 group-hover:text-blue-300" />
-                          </a>
-                          <a href="https://x.com/Abdillahally10" className="group p-2 bg-gray-800/30 rounded-lg hover:bg-gray-700/50 transition-all duration-200"
+              </a>
+              <a href="https://x.com/Abdillahally10" className="group p-2 bg-gray-800/30 rounded-lg hover:bg-gray-700/50 transition-all duration-200"
                 target="_blank"
-                              rel="noopener noreferrer">
-                              <Twitter className="w-5 h-5 text-blue-400 group-hover:text-blue-300" />
-                </a>
+                rel="noopener noreferrer">
+                <Twitter className="w-5 h-5 text-blue-400 group-hover:text-blue-300" />
+              </a>
             </div>
           </div>
         </div>
-        
+
         {/* Stats or highlights section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-60 max-w-2xl">
           <div className="text-center">
@@ -117,7 +120,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Enhanced scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 ">
         <div className="flex flex-col items-center gap-2 animate-bounce">
@@ -126,7 +129,7 @@ const Hero = () => {
           <div className="w-[2px] h-8 bg-gradient-to-b from-gray-400 to-transparent rounded-full" />
         </div>
       </div>
-      
+
       {/* Custom CSS for gradient animation */}
       {/* <style jsx>{`
         @keyframes gradient {

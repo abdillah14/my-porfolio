@@ -12,6 +12,8 @@ import {
   X,
   ExternalLink
 } from 'lucide-react';
+import Image from 'next/image';
+import pic from "../../public/icon-1.png"
 
 const navItems = [
   { name: 'Home', href: '/', icon: Home },
@@ -36,6 +38,12 @@ const Header = () => {
   &lt; Abdillah /&gt;
   <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-500 group-hover:w-full transition-all duration-300"></div>
 </span>
+ <Image
+                            src={pic}
+                            alt="Abdillah Ally"
+                            fill
+                            className="object-cover"
+                          />
 
         </Link>
 

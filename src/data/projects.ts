@@ -96,13 +96,42 @@ export const projects: ProjectType[] = [
   },
   {
     id: '4',
+    title: 'Nyaraka Docs',
+    description: 'Dashboard for tracking social media performance across multiple platforms.',
+    longDescription: 'A comprehensive analytics dashboard that aggregates data from multiple social media platforms, providing insights into engagement, reach, and audience demographics through interactive visualizations and automated reports.',
+    techStack: ['React', 'Tailwind','shadcn UI', 'Supabase DB'],
+    likes: 46,
+    category: 'Analytics',
+    status: 'Completed',
+    demoLink: 'https://nyaraka-docs.vercel.app',
+    githubLink: 'https://github.com/yourusername/social-analytics',
+    images: [
+      'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop'
+    ],
+    thumbnail: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop',
+    timeline: '4 months',
+    role: 'Data Visualization Specialist',
+    client: 'Marketing Agency',
+    challenges: [
+      {
+        title: 'API Rate Limiting',
+        description: 'Managing multiple social media API rate limits efficiently.',
+        solution: 'Implemented intelligent queueing system with retry logic and caching.'
+      }
+    ],
+    features: ['Multi-platform integration', 'Real-time analytics', 'Custom reports', 'Automated insights']
+  },
+  {
+    id: '5',
     title: 'Fursa Link',
     description: 'Property listing platform with interactive maps and virtual tour capabilities.',
     longDescription: 'A modern real estate platform that connects buyers, sellers, and agents through an intuitive interface featuring advanced search capabilities, interactive maps, and immersive virtual property tours.',
     techStack: ['Next.js', 'convex', 'Node.js', 'langchain'],
     likes: 51,
     category: 'E-commerce',
-    status: 'Completed',
+    status: 'In Progress',
     demoLink: '#',
     githubLink: 'https://github.com/yourusername/realestate-marketplace',
     images: [
@@ -124,35 +153,6 @@ export const projects: ProjectType[] = [
     features: ['Advanced search filters', 'Virtual tours', 'Interactive maps', 'Agent profiles']
   },
   {
-    id: '5',
-    title: 'Nyaraka Docs',
-    description: 'Dashboard for tracking social media performance across multiple platforms.',
-    longDescription: 'A comprehensive analytics dashboard that aggregates data from multiple social media platforms, providing insights into engagement, reach, and audience demographics through interactive visualizations and automated reports.',
-    techStack: ['React', 'D3.js', 'Express.js', 'MongoDB', 'Socket.io', 'Chart.js'],
-    likes: 46,
-    category: 'Analytics',
-    status: 'In Progress',
-    demoLink: '3',
-    githubLink: 'https://github.com/yourusername/social-analytics',
-    images: [
-      'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop'
-    ],
-    thumbnail: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop',
-    timeline: '4 months',
-    role: 'Data Visualization Specialist',
-    client: 'Marketing Agency',
-    challenges: [
-      {
-        title: 'API Rate Limiting',
-        description: 'Managing multiple social media API rate limits efficiently.',
-        solution: 'Implemented intelligent queueing system with retry logic and caching.'
-      }
-    ],
-    features: ['Multi-platform integration', 'Real-time analytics', 'Custom reports', 'Automated insights']
-  },
-  {
     id: '6',
     title: 'AI Content Generator',
     description: 'Platform that uses advanced AI to create marketing content and blog posts.',
@@ -160,7 +160,7 @@ export const projects: ProjectType[] = [
     techStack: ['Next.js', 'OpenAI API', 'Node.js', 'Firebase', 'Stripe', 'Redis'],
     likes: 37,
     category: 'AI/ML',
-    status: 'Completed',
+    status: 'In Progress',
     demoLink: '#',
     githubLink: 'https://github.com/yourusername/ai-content-generator',
     images: [
