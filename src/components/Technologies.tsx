@@ -29,7 +29,7 @@ const Technologies = () => {
         {/* Header */}
         <div className="text-center mb-20">
             <div className="inline-block">
-              <h1 className="text-2xl lg:text-3xl font-black mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent relative">
+              <h1 className="text-2xl lg:text-3xl font-black mb-6 bg-neutral-100  text-gray-800 to-cyan-400 bg-clip-text text-transparent relative">
               Technologies I Work With
                 <div className="absolute -top-2 -left-2 w-full h-full bg-gradient-to-r from-blue-400/20 via-purple-400/20 to-cyan-400/20 blur-2xl -z-10"></div>
               </h1>

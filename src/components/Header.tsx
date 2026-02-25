@@ -62,13 +62,13 @@ const Header = () => {
                     : 'text-gray-300 hover:text-white'
                   }`}
               >
-                <Icon className={`w-4 h-4 transition-all duration-300 ${isActive ? 'text-blue-400' : 'group-hover:text-blue-400'
+                <Icon className={`w-4 h-4 transition-all duration-300 ${isActive ? 'text-neutral-100' : 'group-hover:text-neutral-100'
                   }`} />
-                <span className="font-medium">{item.name}</span>
+                <span className="font-medium text-neutral-100">{item.name}</span>
 
                 {/* Active indicator */}
                 {isActive && (
-                  <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-blue-400 rounded-full"></div>
+                  <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-neutral-40 rounded-full"></div>
                 )}
 
                 {/* Hover effect */}

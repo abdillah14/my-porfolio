@@ -11,7 +11,7 @@ const FeaturedProjects = ({ projects }: { projects: ProjectType[] }) => {
         {/* Header */}
         <div className="text-center mb-20">
             <div className="inline-block">
-              <h1 className="text-3xl lg:text-4xl font-black mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent relative">
+              <h1 className="text-3xl lg:text-4xl font-black mb-6 bg-neutral-100  text-gray-800 to-cyan-400 bg-clip-text text-transparent relative">
               Featured Projects
                 <div className="absolute -top-2 -left-2 w-full h-full bg-gradient-to-r from-blue-400/20 via-purple-400/20 to-cyan-400/20 blur-2xl -z-10"></div>
               </h1>
@@ -34,7 +34,7 @@ const FeaturedProjects = ({ projects }: { projects: ProjectType[] }) => {
         <div className="text-center mt-12">
           <a 
             href="/projects" 
-            className="inline-block px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-medium hover:opacity-90 transition-opacity shadow-lg shadow-blue-500/20"
+            className="inline-block px-8 py-3 bg-neutral-100  text-gray-800 rounded-lg font-medium hover:opacity-90 transition-opacity shadow-lg shadow-blue-500/20"
           >
             View All Projects
           </a>

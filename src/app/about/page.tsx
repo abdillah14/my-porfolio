@@ -19,7 +19,7 @@ export default function AboutPage() {
           {/* Header */}
           <div className="text-center mb-20">
             <div className="inline-block">
-              <h1 className="text-3xl lg:text-4xl font-black mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent relative">
+              <h1 className="text-3xl lg:text-4xl font-black mb-6 bg-neutral-100  text-gray-800 to-cyan-400 bg-clip-text text-transparent relative">
                 About Me
                 <div className="absolute -top-2 -left-2 w-full h-full bg-gradient-to-r from-blue-400/20 via-purple-400/20 to-cyan-400/20 blur-2xl -z-10"></div>
               </h1>
@@ -96,7 +96,7 @@ export default function AboutPage() {
                     </a>
                     <a href="https://www.linkedin.com/in/abdillah-ally-50a347269" 
                        className="flex items-center gap-4 p-4 rounded-xl bg-gray-900/30 hover:bg-gray-900/60 text-gray-300 hover:text-blue-400 transition-all duration-300 border border-transparent hover:border-blue-500/30 group/link">
-                      <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center text-lg group-hover/link:scale-110 transition-transform">
+                      <div className="w-10 h-10 bg-neutral-100 rounded-lg flex items-center justify-center text-lg group-hover/link:scale-110 transition-transform">
                         💼
                       </div>
                       <span className="font-medium">LinkedIn</span>
@@ -167,10 +167,10 @@ export default function AboutPage() {
                     <div className="flex flex-wrap justify-center gap-6">
                       <Link
                         href="/projects"
-                        className="group flex items-center justify-center gap-3 px-10 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl font-semibold text-lg hover:from-blue-500 hover:to-purple-500 transition-all duration-300 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:scale-105"
+                        className="group flex items-center justify-center gap-3 px-10 py-4 bg-neutral-100 rounded-2xl font-semibold text-lg hover:from-blue-500 hover:to-purple-500 transition-all duration-300 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:scale-105"
                       >
                         {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-purple-700 translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300"></div> */}
-                        <span className="relative flex items-center gap-2">
+                        <span className="relative flex items-center gap-2 text-gray-800">
                           View My Work
                           <span className="group-hover/btn:translate-x-1 transition-transform">→</span>
                         </span>

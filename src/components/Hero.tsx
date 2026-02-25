@@ -49,7 +49,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 mt-6">
               <Link
                 href="/projects"
-                className="group flex items-center justify-center gap-2 px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-lg font-semibold rounded-2xl hover:scale-105 hover:from-blue-500 hover:to-purple-500 transition-all shadow-lg shadow-blue-500/25"
+                className="group flex items-center justify-center gap-2 px-8 py-3 bg-neutral-100  text-gray-800 text-lg font-semibold rounded-2xl hover:scale-105 hover:from-blue-500 hover:to-purple-500 transition-all shadow-lg shadow-blue-500/25"
               >
                 Explore My Work
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />

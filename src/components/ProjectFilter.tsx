@@ -32,9 +32,9 @@ const ProjectFilter = ({ projects }: { projects: ProjectType[] }) => {
           <div className='container mx-auto px-4'>
           <div className="text-center mb-20">
             <div className="inline-block">
-              <h1 className="text-3xl lg:text-4xl font-black mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent relative">
+              <h1 className="text-3xl lg:text-4xl font-black mb-6 bg-neutral-100  text-gray-800 to-cyan-400 bg-clip-text text-transparent relative">
                  Projects
-                <div className="absolute -top-2 -left-2 w-full h-full bg-gradient-to-r from-blue-400/20 via-purple-400/20 to-cyan-400/20 blur-2xl -z-10"></div>
+                <div className="absolute -top-2 -left-2 w-full h-full bg-gradient-to-r from-blue-300/20 via-purple-400/20 to-cyan-400/20 blur-2xl -z-10"></div>
               </h1>
             </div>
             <p className="text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed font-light">
@@ -54,7 +54,7 @@ const ProjectFilter = ({ projects }: { projects: ProjectType[] }) => {
               onClick={() => setActiveCategory(category)}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                 activeCategory === category
-                  ? 'bg-blue-600 text-white'
+                  ? 'bg-neutral-100  text-gray-800'
                   : 'bg-gray-800 text-gray-400 hover:text-white hover:bg-gray-700'
               }`}
             >
