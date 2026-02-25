@@ -155,7 +155,7 @@ export default function AboutPage() {
 
               {/* CTA Section */}
               <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 via-purple-600/30 to-cyan-600/30 rounded-3xl blur-2xl group-hover:blur-xl transition-all duration-500"></div>
+                <div className="relative bg-gray-800/20 backdrop-blur-2xl rounded-3xl blur-2xl group-hover:blur-xl transition-all duration-500"></div>
                 <div className="relative bg-gradient-to-br from-blue-600/10 via-purple-600/10 to-cyan-600/10 backdrop-blur-2xl p-10 rounded-3xl border border-gradient-to-r border-blue-500/20 shadow-2xl">
                   <div className="text-center">
                     <div className="inline-block p-4 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-2xl mb-6">
