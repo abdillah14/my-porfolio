@@ -128,8 +128,7 @@ export default function ContactPage() {
                 type="submit"
                 disabled={isSubmitting}
                 className={`w-full flex items-center justify-center gap-2
-                           bg-gradient-to-r from-blue-500 to-purple-600
-                           text-white font-medium py-3 rounded-lg
+                           bg-neutral-100  text-gray-800 font-medium py-3 rounded-lg
                            hover:opacity-90 transition
                            disabled:opacity-50`}
               >
