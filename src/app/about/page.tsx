@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import pic from "../../../public/profil.jpg"
 import Link from 'next/link';
+import { NotepadText } from 'lucide-react';
 
 export default function AboutPage() {
   return (
@@ -121,7 +122,7 @@ export default function AboutPage() {
                 <div className="relative bg-gray-800/20 backdrop-blur-2xl p-10 rounded-3xl border border-gray-700/20 shadow-2xl">
                   <div className="flex items-center gap-4 mb-8">
                     <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-purple-200 rounded-xl flex items-center justify-center text-2xl">
-                      🚀
+                      <NotepadText className='text-gray-800'/>
                     </div>
                     <h2 className="text-4xl font-bold text-white">My Journey</h2>
                   </div>
