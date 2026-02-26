@@ -34,7 +34,7 @@ const Footer = () => {
           <div className="mb-8 md:mb-0 text-center md:text-left">
             <Link 
               href="/" 
-              className="group text-2xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent hover:from-blue-300 hover:via-purple-400 hover:to-pink-400 transition-all duration-300"
+              className="group text-2xl font-bold bg-gradient-to-r from-neutral-400  to-pink-500 bg-clip-text text-transparent hover:from-blue-300 hover:via-purple-400 hover:to-pink-400 transition-all duration-300"
             >
               &lt; Abdillah /&gt;
             </Link>
