@@ -164,7 +164,7 @@ export default function ContactPage() {
 function Info({ icon: Icon, title, text }: any) {
   return (
     <div className="flex items-start">
-      <div className="bg-blue-500/10 p-3 rounded-full mr-4 text-blue-400">
+      <div className="bg-cyan-500/10 p-3 rounded-full mr-4 text-neutral-400">
         <Icon className="w-6 h-6" />
       </div>
       <div>

@@ -82,14 +82,14 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
   {(project?.techStack ?? []).slice(0, 3).map((tech: string) => (
     <span
       key={tech}
-      className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300"
+      className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-cyan-50 text-neutral-700 dark:bg-cyan-900/40 dark:text-neutral-300"
     >
       {tech}
     </span>
   ))}
 
   {project?.techStack && project.techStack.length > 3 && (
-    <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400">
+    <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-gray-100 text-neutral-600 dark:bg-gray-800 dark:text-gray-400">
       +{project.techStack.length - 3}
     </span>
   )}
@@ -125,7 +125,7 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
 
           <Link
             href={`/projects/${project.id}`}
-            className="inline-flex items-center gap-1 px-3 py-1.5 text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded-md transition-all duration-200"
+            className="inline-flex items-center gap-1 px-3 py-1.5 text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-blue-700 dark:hover:text-blue-300 hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded-md transition-all duration-200"
           >
             View Project
             <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">

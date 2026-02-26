@@ -57,18 +57,18 @@ export default function AboutPage() {
                       {/* Profile Info */}
                       <div className="text-center relative z-10">
                         <h2 className="text-3xl font-bold mb-2 text-white">Abdillah Ally</h2>
-                        <div className="inline-block px-4 py-2 bg-gradient-to-r from-purple-500/20 to-blue-500/20 backdrop-blur-sm rounded-full border border-purple-500/30 mb-4">
-                          <p className="text-purple-300 font-medium">Software Engineer & AI Developer</p>
+                        <div className="inline-block px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-cyan-500/20 backdrop-blur-sm rounded-full border border-purple-500/30 mb-4">
+                          <p className="text-neutral-400 font-medium">Software Engineer & AI Developer</p>
                         </div>
 
                         {/* Stats */}
                         <div className="grid grid-cols-2 gap-4 mt-6">
                           <div className="bg-gray-800/50 backdrop-blur-sm p-4 rounded-xl border border-gray-700/30">
-                            <div className="text-2xl font-bold text-blue-400">3+</div>
+                            <div className="text-2xl font-bold text-neutral-400">3+</div>
                             <div className="text-sm text-gray-400">Years Exp.</div>
                           </div>
                           <div className="bg-gray-800/50 backdrop-blur-sm p-4 rounded-xl border border-gray-700/30">
-                            <div className="text-2xl font-bold text-purple-400">5+</div>
+                            <div className="text-2xl font-bold text-neutral-400">5+</div>
                             <div className="text-sm text-gray-400">Projects</div>
                           </div>
                         </div>
