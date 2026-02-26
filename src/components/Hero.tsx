@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight, Download, Github, Linkedin, Mail, Code, Sparkles, MousePointer, Twitter } from 'lucide-react';
+import { ArrowRight, Download, Github, Linkedin, Mail, Code, Sparkles, MousePointer, Twitter, Cog } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -18,14 +18,14 @@ const Hero = () => {
           <div className="lg:col-span-7 space-y-6">
             {/* Greeting */}
             <div className="flex items-center gap-3">
-              <Sparkles className="w-6 h-6 text-yellow-400 animate-spin" />
+              <Cog className="w-6 h-6 text-cyan-500 animate-spin" />
               <span className="text-lg text-gray-300 font-medium">Welcome to my digital space</span>
             </div>
 
             {/* Heading */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-gray-100">
               <span className="block">Hello, I'm</span>
-              <span className="block mt-2 bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
+              <span className="block mt-2 bg-gradient-to-r from-neutral-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
                 Abdillah Ally
               </span>
             </h1>
@@ -90,8 +90,8 @@ const Hero = () => {
 
           {/* Right: Stats */}
           <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center mt-10 lg:mt-0">
-            <StatCard value="5+" label="Projects Completed" color="text-blue-400" />
-            <StatCard value="3+" label="Years Experience" color="text-purple-400" />
+            <StatCard value="5+" label="Projects Completed" color="text-cyan-400" />
+            <StatCard value="3+" label="Years Experience" color="text-cyan-400" />
             <StatCard value="24/7" label="Coffee Powered" color="text-cyan-400" />
           </div>
 

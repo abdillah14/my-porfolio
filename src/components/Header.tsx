@@ -58,7 +58,7 @@ const Header = () => {
                 key={item.name}
                 href={item.href}
                 className={`group relative flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-300 hover:bg-gray-800/50 hover:scale-105 ${isActive
-                    ? 'text-blue-400 bg-blue-500/10 shadow-lg shadow-blue-500/20'
+                    ? 'text-blue-400 bg-blue-500/10 shadow-lg shadow-cyan-100/8'
                     : 'text-gray-300 hover:text-white'
                   }`}
               >
@@ -72,7 +72,7 @@ const Header = () => {
                 )}
 
                 {/* Hover effect */}
-                <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-blue-500/0 via-purple-500/0 to-pink-500/0 group-hover:from-blue-500/5 group-hover:via-purple-500/5 group-hover:to-pink-500/5 transition-all duration-300"></div>
+                <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-cyan-100/0  group-hover:from-cyan-100/5  transition-all duration-300"></div>
               </Link>
             );
           })}

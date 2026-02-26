@@ -28,7 +28,7 @@ export default function AboutPage() {
               Crafting next-generation digital experiences with cutting-edge technology and innovative design
             </p>
             <div className="flex justify-center mt-8">
-              <div className="w-40 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent rounded-full animate-pulse"></div>
+              <div className="w-40 h-1 bg-gradient-to-r from-transparent via-cyan-500 to-transparent rounded-full animate-pulse"></div>
             </div>
           </div>
 
@@ -120,7 +120,7 @@ export default function AboutPage() {
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-purple-600/10 to-cyan-600/10 rounded-3xl blur-2xl group-hover:blur-xl transition-all duration-500"></div>
                 <div className="relative bg-gray-800/20 backdrop-blur-2xl p-10 rounded-3xl border border-gray-700/20 shadow-2xl">
                   <div className="flex items-center gap-4 mb-8">
-                    <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex items-center justify-center text-2xl">
+                    <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-purple-200 rounded-xl flex items-center justify-center text-2xl">
                       🚀
                     </div>
                     <h2 className="text-4xl font-bold text-white">My Journey</h2>
@@ -128,14 +128,14 @@ export default function AboutPage() {
 
                   <div className="space-y-8 text-gray-300 leading-relaxed">
                     <div className="relative pl-8 border-l-2 border-gradient-to-b from-blue-500 to-purple-500">
-                      <div className="absolute -left-2 top-0 w-4 h-4 bg-blue-500 rounded-full"></div>
+                      <div className="absolute -left-2 top-0 w-4 h-4 bg-cyan-500 rounded-full"></div>
                       <p className="text-lg font-light">
                         With over <span className="text-white font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">3 years of dedicated experience</span> in software engineering, I specialize in architecting scalable web applications and crafting innovative digital solutions that drive exponential business growth.
                       </p>
                     </div>
 
                     <div className="relative pl-8 border-l-2 border-gradient-to-b from-purple-500 to-cyan-500">
-                      <div className="absolute -left-2 top-0 w-4 h-4 bg-purple-500 rounded-full"></div>
+                      <div className="absolute -left-2 top-0 w-4 h-4 bg-cyan-500 rounded-full"></div>
                       <p className="font-light">
                         My academic foundation at <span className="text-blue-400 font-semibold">International University of Equator</span> in Software Engineering equipped me with deep expertise in algorithms, distributed systems, and enterprise architecture.
                       </p>
