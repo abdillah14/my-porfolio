@@ -137,14 +137,14 @@ export default function AboutPage() {
                     <div className="relative pl-8 border-l-2 border-gradient-to-b from-purple-500 to-cyan-500">
                       <div className="absolute -left-2 top-0 w-4 h-4 bg-cyan-500 rounded-full"></div>
                       <p className="font-light">
-                        My academic foundation at <span className="text-blue-400 font-semibold">International University of Equator</span> in Software Engineering equipped me with deep expertise in algorithms, distributed systems, and enterprise architecture.
+                        My academic foundation at <span className="text-cyan-200 font-semibold">International University of Equator</span> in Software Engineering equipped me with deep expertise in algorithms, distributed systems, and enterprise architecture.
                       </p>
                     </div>
 
                     <div className="relative pl-8 border-l-2 border-gradient-to-b from-cyan-500 to-blue-500">
                       <div className="absolute -left-2 top-0 w-4 h-4 bg-cyan-500 rounded-full"></div>
                       <p className="font-light">
-                        I'm passionate about leveraging emerging technologies like <span className="text-purple-400 font-semibold">React, Next.js, TypeScript, and Nodejs as backend</span> to build high-performance, user-centric applications that deliver exceptional experiences and measurable ROI.
+                        I'm passionate about leveraging emerging technologies like <span className="text-cyan-200 font-semibold">React, Next.js, TypeScript, and Nodejs as backend</span> to build high-performance, user-centric applications that deliver exceptional experiences and measurable ROI.
                       </p>
                     </div>
                   </div>
