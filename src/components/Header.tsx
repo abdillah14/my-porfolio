@@ -19,7 +19,7 @@ const navItems = [
   { name: 'Home', href: '/', icon: Home },
   { name: 'About', href: '/about', icon: User },
   { name: 'Projects', href: '/projects', icon: FolderOpen },
-  { name: 'Contact', href: '#contact', icon: Mail },
+  { name: 'Contact', href: '/contact', icon: Mail },
 ];
 
 const Header = () => {

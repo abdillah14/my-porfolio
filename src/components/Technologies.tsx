@@ -38,7 +38,7 @@ const Technologies = () => {
             Tools and frameworks I use to build high-quality, scalable, and modern applications.
             </p>
             <div className="flex justify-center mt-8">
-              <div className="w-40 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent rounded-full animate-pulse"></div>
+              <div className="w-40 h-1 bg-gradient-to-r from-transparent via-cyan-500 to-transparent rounded-full animate-pulse"></div>
             </div>
           </div>
        
