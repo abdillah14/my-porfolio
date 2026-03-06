@@ -14,11 +14,11 @@ export const projects: ProjectType[] = [
     demoLink: 'https://abd-le-testeur.vercel.app',
     githubLink: 'https://github.com/yourusername/kuwasafe',
     images: [
-      'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop'
+      '/test-1.png',
+      '/test-2.png',
+      '/test-3.png'
     ],
-    thumbnail: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop',
+    thumbnail: '/test-1.png',
     timeline: '3 months',
     role: 'Full Stack Developer',
     client: 'Personal Project',
@@ -48,11 +48,11 @@ export const projects: ProjectType[] = [
     demoLink: 'https://tafiti-iq-agent.vercel.app',
     githubLink: 'https://github.com/yourusername/tafiti-iq',
     images: [
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop'
+      '/tafiti-1.png',
+      '/tafiti-2.png',
+      '/tafiti-3.png'
     ],
-    thumbnail: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop',
+    thumbnail: '/tafiti-1.png',
     timeline: '4 months',
     role: 'Lead Developer',
     client: 'Tech Startup',
@@ -77,11 +77,11 @@ export const projects: ProjectType[] = [
     demoLink: 'https://yako-law.vercel.app',
     githubLink: 'https://github.com/yourusername/juridic-law',
     images: [
-      'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop'
+      '/law-1.png',
+      '/law-2.png',
+      '/law-3.png'
     ],
-    thumbnail: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=300&fit=crop',
+    thumbnail: '/law-1.png',
     timeline: '6 months',
     role: 'Full Stack Developer',
     client: 'Law Firm',
@@ -106,11 +106,11 @@ export const projects: ProjectType[] = [
     demoLink: 'https://nyaraka-docs.vercel.app',
     githubLink: 'https://github.com/yourusername/social-analytics',
     images: [
-      'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop'
+      '/nyara-1.png',
+      '/nyara-2.png',
+      '/nyara-3.png'
     ],
-    thumbnail: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop',
+    thumbnail: '/nyara-1.png',
     timeline: '4 months',
     role: 'Data Visualization Specialist',
     client: 'Marketing Agency',
@@ -125,21 +125,21 @@ export const projects: ProjectType[] = [
   },
   {
     id: '5',
-    title: 'Fursa Link',
-    description: 'Property listing platform with interactive maps and virtual tour capabilities.',
-    longDescription: 'A modern real estate platform that connects buyers, sellers, and agents through an intuitive interface featuring advanced search capabilities, interactive maps, and immersive virtual property tours.',
+    title: 'Sawa Struct',
+    description: 'To reduce architectural guesswork and provide structured, expert-level technical guidance using AI.',
+    longDescription: 'a new agent system called SawaStruct — an intelligent Software Architecture Advisor designed to help engineers and founders make smarter architectural decisions from day one',
     techStack: ['Next.js', 'convex', 'Node.js', 'langchain'],
     likes: 51,
-    category: 'E-commerce',
+    category: 'artificial intelligence',
     status: 'In Progress',
-    demoLink: '#',
+    demoLink: 'https://sawa-struct.vercel.app/',
     githubLink: 'https://github.com/yourusername/realestate-marketplace',
     images: [
-      'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop'
+      '/sawa-struct.png',
+      '/sawa-2.png',
+      '/sawa-3.png'
     ],
-    thumbnail: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop',
+    thumbnail: '/sawa-struct.png',
     timeline: '5 months',
     role: 'Frontend Lead',
     client: 'Real Estate Agency',
@@ -154,21 +154,21 @@ export const projects: ProjectType[] = [
   },
   {
     id: '6',
-    title: 'AI Content Generator',
-    description: 'Platform that uses advanced AI to create marketing content and blog posts.',
+    title: 'Press Pilot',
+    description: 'Platform that uses advanced AI to create article and blog posts.',
     longDescription: 'An intelligent content creation platform that leverages multiple AI models to generate high-quality marketing copy, blog posts, and social media content. Features include tone adjustment, SEO optimization, and multi-language support.',
-    techStack: ['Next.js', 'OpenAI API', 'Node.js', 'Firebase', 'Stripe', 'Redis'],
+    techStack: ['Next.js', 'OpenAI API', 'Node.js', 'langchain'],
     likes: 37,
-    category: 'AI/ML',
-    status: 'In Progress',
-    demoLink: '#',
+    category: 'AI/Agent',
+    status: 'Completed',
+    demoLink: 'https://press-pilot.vercel.app/',
     githubLink: 'https://github.com/yourusername/ai-content-generator',
     images: [
-      'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=600&fit=crop'
+      '/press-1.png',
+      '/press-2.png',
+      '/press-pilot.png'
     ],
-    thumbnail: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop',
+    thumbnail: '/press-1.png',
     timeline: '3 months',
     role: 'AI Engineer',
     client: 'Content Agency',
