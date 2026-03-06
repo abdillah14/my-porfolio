@@ -34,7 +34,7 @@ export const projects: ProjectType[] = [
         solution: 'Built a flexible parser system that can adapt to various code structures and languages.'
       }
     ],
-    features: ['Automatic test generation', 'Multi-language support', 'Real-time analysis', 'Integration with popular IDEs']
+    features: ['Automatic test generation', 'Multi-language support', 'Real-time analysis',]
   },
   {
     id: '2',
@@ -63,7 +63,7 @@ export const projects: ProjectType[] = [
         solution: 'Implemented advanced NLP models with context awareness and query validation.'
       }
     ],
-    features: ['Natural language queries', 'Interactive dashboards', 'Multi-database support', 'Export capabilities']
+    features: ['Natural language queries', 'Interactive dashboards', 'database support', 'Export capabilities']
   },
   {
     id: '3',
@@ -87,21 +87,21 @@ export const projects: ProjectType[] = [
     client: 'Law Firm',
     challenges: [
       {
-        title: 'Data Security & Compliance',
-        description: 'Ensuring GDPR and legal industry compliance for sensitive data.',
+        title: 'Platform specialized in comparative law',
+        description: 'YakoLaw is designed to bridge language and legal barriers by offering specialized support in comparative law across East Africa and international legal systems.',
         solution: 'Implemented end-to-end encryption and comprehensive audit trails.'
       }
     ],
-    features: ['Case management', 'Document automation', 'Client portal', 'Billing integration']
+    features: [' provides general legal information only']
   },
   {
     id: '4',
     title: 'Nyaraka Docs',
-    description: 'Dashboard for tracking social media performance across multiple platforms.',
-    longDescription: 'A comprehensive analytics dashboard that aggregates data from multiple social media platforms, providing insights into engagement, reach, and audience demographics through interactive visualizations and automated reports.',
+    description: 'document intelligence platform that lets you have natural conversations with your PDFs and Word documents.',
+    longDescription: 'Whether you’re a student, researcher, or professional, Nyaraka turns your documents into an interactive knowledge assistant. Curious how AI can make your PDFs talk? Try Nyaraka and see the difference!',
     techStack: ['React', 'Tailwind','shadcn UI', 'Supabase DB'],
     likes: 46,
-    category: 'Analytics',
+    category: 'Document Extraction',
     status: 'Completed',
     demoLink: 'https://nyaraka-docs.vercel.app',
     githubLink: 'https://github.com/yourusername/social-analytics',
@@ -112,8 +112,8 @@ export const projects: ProjectType[] = [
     ],
     thumbnail: '/nyara-1.png',
     timeline: '4 months',
-    role: 'Data Visualization Specialist',
-    client: 'Marketing Agency',
+    role: 'Document extraction',
+    client: 'Agent AI',
     challenges: [
       {
         title: 'API Rate Limiting',
@@ -121,7 +121,7 @@ export const projects: ProjectType[] = [
         solution: 'Implemented intelligent queueing system with retry logic and caching.'
       }
     ],
-    features: ['Multi-platform integration', 'Real-time analytics', 'Custom reports', 'Automated insights']
+    features: ['Upload any PDF or DOCX', 'Ask questions and get accurate, contextual answers', 'Generate smart summaries — concise or detailed ', 'Create quiz questions from your content']
   },
   {
     id: '5',
@@ -145,12 +145,12 @@ export const projects: ProjectType[] = [
     client: 'Real Estate Agency',
     challenges: [
       {
-        title: 'Performance with Large Datasets',
-        description: 'Handling thousands of property listings with real-time updates.',
-        solution: 'Implemented virtualization and optimized database queries with proper indexing.'
+        title: 'SawaStruct an intelligent Software',
+        description: 'agent system called SawaStruct — an intelligent Software Architecture Advisor designed to help engineers and founders make smarter architectural decisions from day one.',
+        solution: 'To reduce architectural guesswork and provide structured, expert-level technical guidance using AI.'
       }
     ],
-    features: ['Advanced search filters', 'Virtual tours', 'Interactive maps', 'Agent profiles']
+    features: ['Analyzes complex system requirements', 'Recommends architecture patterns', 'Designs database structures', 'Plans scalable infrastructure']
   },
   {
     id: '6',
@@ -174,11 +174,11 @@ export const projects: ProjectType[] = [
     client: 'Content Agency',
     challenges: [
       {
-        title: 'Content Quality Control',
-        description: 'Ensuring generated content meets quality and brand standards.',
+        title: 'Content and article generator',
+        description: 'a cutting-edge AI-powered platform that automates research, writing, and editing to create high-quality, newsroom-ready articles..',
         solution: 'Developed multi-stage validation system with human-in-the-loop review.'
       }
     ],
-    features: ['Multi-format content', 'SEO optimization', 'Brand voice training', 'Batch generation']
+    features: ['Searches the web for relevant, up-to-date sources', 'Generates well-structured, engaging articles on any topic', 'Edits and refines content to meet professional journalism standards',]
   }
 ];
