@@ -4,6 +4,86 @@ import { ProjectType } from '@/types/project';
 export const projects: ProjectType[] = [
   {
     id: '1',
+    title: 'Cartify',
+    description: 'A modern supermarket management system built to optimize retail operations and enhance customer experience.',
+    longDescription: 'Cartify enables efficient inventory tracking, sales management, and customer insights. With barcode scanning, automated stock updates, and analytics, it helps retailers run smarter and faster.',
+    techStack: ['React', 'Node.js', 'TypeScript', 'Tailwind CSS', 'MySQL', 'Express'],
+    likes: 72,
+    category: 'Retail Management',
+    status: 'Completed',
+    demoLink: '',
+    githubLink: 'https://github.com/yourusername/cartify',
+    images: [
+      "/cartify/cartify-2.png",
+      "/cartify/cartify-3.png",
+      "/cartify/cartify-4.png",
+      "/cartify/cartify-6.png",
+      "/cartify/cartify-7.png",
+    ],
+    thumbnail: '/cartify/cartify-1.png',
+    timeline: '3 months',
+    role: 'Full Stack Developer',
+    client: 'Supermarket',
+    challenges: [
+      {
+        title: "Real-Time Inventory Synchronization",
+        description:
+          "Ensuring that product stock levels update instantly after every sale or restock operation.",
+        solution:
+          "Implemented real-time updates using optimized API calls and efficient database queries to keep inventory data consistent across the system."
+      },
+      {
+        title: "Efficient Product Search and Management",
+        description:
+          "Managing and retrieving thousands of products quickly within the system.",
+        solution:
+          "Designed indexed database queries and integrated barcode scanning to enable fast product lookup and accurate sales processing."
+      }
+    ],
+    features: ['Real-time inventory tracking', 'Product search and management',"Sales and revenue analytics dashboard", 'Sales analytics', 'Customer insights']
+  },
+  {
+    id: '2',
+    title: 'FlashCargo  ',
+    description: 'a Cargo Management System (CMS). It’s organized so you can drop sections into a project wiki, hand to engineers, or feed into planning tools.',
+    longDescription: 'FlashCargo is a Cargo Management System (CMS) to manage cargo lifecycle: quoting, booking, pickup, transit, warehousing, customs, delivery, billing and tracking for shippers, carriers, warehouses, and internal operators.',
+    techStack: ['React.js', 'TypeScript', 'Tailwind CSS', 'MySQL', 'Express.js', 'Node.js'],
+    likes: 72,
+    category: 'Cargo Management',
+    status: 'Completed',
+    demoLink: '',
+    githubLink: 'https://github.com/yourusername/flashcargo',
+    images: [
+      "/cargo/cargo-2.png",
+      "/cargo/cargo-3.png",
+      "/cargo/cargo-4.png",
+      "/cargo/cargo-5.png",
+      "/cargo/cargo-6.png",
+    ],
+    thumbnail: '/cargo/cargo-1.png',
+      timeline: '3 months',
+      role: 'Full Stack Developer',
+      client: 'Cargo Management',
+      challenges: [
+        {
+          title: "Real-Time Cargo Tracking",
+          description:
+            "Ensuring that cargo status updates instantly after every pickup, transit, or delivery operation.",
+          solution:
+            "Implemented real-time updates using optimized API calls and efficient database queries to keep cargo data consistent across the system."
+        },
+        {
+          title: "Efficient Cargo Search and Management",
+          description:
+            "Managing and retrieving thousands of cargo quickly within the system.",
+          solution:
+            "Designed indexed database queries and integrated barcode scanning to enable fast cargo lookup and accurate cargo processing."
+        }
+      ],
+      features: ['Real-time cargo tracking', 'Cargo search and management',"Cargo booking and tracking", 'Cargo warehousing and customs', 'Cargo delivery and billing']
+    },
+  {
+    id: '1',
     title: 'KuwaSafe',
     description: 'Turn your code into full unit tests in a few seconds with KuwaSafe.',
     longDescription: 'KuwaSafe is an intelligent testing platform that leverages AI to automatically generate comprehensive unit tests for your codebase. It analyzes your code structure, identifies edge cases, and creates meaningful test scenarios to ensure robust code coverage.',
@@ -37,7 +117,7 @@ export const projects: ProjectType[] = [
     features: ['Automatic test generation', 'Multi-language support', 'Real-time analysis',]
   },
   {
-    id: '2',
+    id: '3',
     title: 'Tafiti IQ',
     description: 'Connect your SQL database and explore insights using plain English. No SQL expertise required - just ask questions and get instant visualizations.',
     longDescription: 'Tafiti IQ revolutionizes data analysis by allowing users to interact with their databases using natural language. The platform converts plain English queries into SQL, executes them, and presents results through interactive visualizations.',
@@ -66,7 +146,7 @@ export const projects: ProjectType[] = [
     features: ['Natural language queries', 'Interactive dashboards', 'database support', 'Export capabilities']
   },
   {
-    id: '3',
+    id: '4',
     title: 'Juridic Law',
     description: 'Comprehensive legal case management system with document automation and client portal.',
     longDescription: 'Juridic Law is a complete legal practice management solution that streamlines case management, automates document generation, and provides clients with a secure portal to track their cases and communicate with their legal team.',
@@ -95,7 +175,7 @@ export const projects: ProjectType[] = [
     features: [' provides general legal information only']
   },
   {
-    id: '4',
+    id: '5',
     title: 'Nyaraka Docs',
     description: 'document intelligence platform that lets you have natural conversations with your PDFs and Word documents.',
     longDescription: 'Whether you’re a student, researcher, or professional, Nyaraka turns your documents into an interactive knowledge assistant. Curious how AI can make your PDFs talk? Try Nyaraka and see the difference!',
@@ -124,7 +204,7 @@ export const projects: ProjectType[] = [
     features: ['Upload any PDF or DOCX', 'Ask questions and get accurate, contextual answers', 'Generate smart summaries — concise or detailed ', 'Create quiz questions from your content']
   },
   {
-    id: '5',
+    id: '6',
     title: 'Sawa Struct',
     description: 'To reduce architectural guesswork and provide structured, expert-level technical guidance using AI.',
     longDescription: 'a new agent system called SawaStruct — an intelligent Software Architecture Advisor designed to help engineers and founders make smarter architectural decisions from day one',
@@ -153,7 +233,7 @@ export const projects: ProjectType[] = [
     features: ['Analyzes complex system requirements', 'Recommends architecture patterns', 'Designs database structures', 'Plans scalable infrastructure']
   },
   {
-    id: '6',
+    id: '7',
     title: 'Press Pilot',
     description: 'Platform that uses advanced AI to create article and blog posts.',
     longDescription: 'An intelligent content creation platform that leverages multiple AI models to generate high-quality marketing copy, blog posts, and social media content. Features include tone adjustment, SEO optimization, and multi-language support.',
