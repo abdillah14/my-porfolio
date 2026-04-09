@@ -20,7 +20,7 @@ export default function AboutPage() {
           {/* Header */}
           <div className="text-center mb-20">
             <div className="inline-block">
-              <h1 className="text-3xl lg:text-4xl font-black mb-6 text-gray-800 relative">
+              <h1 className="text-3xl lg:text-4xl font-black mb-6 text-white relative">
                 About Me
               </h1>
             </div>

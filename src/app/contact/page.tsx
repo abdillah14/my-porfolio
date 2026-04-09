@@ -46,7 +46,7 @@ export default function ContactPage() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-20">
-          <h1 className="text-3xl lg:text-4xl font-black mb-6 text-gray-800">
+          <h1 className="text-3xl lg:text-4xl font-black mb-6 text-white ">
             Get In Touch
           </h1>
           <p className="text-2xl text-gray-300 max-w-3xl mx-auto">

@@ -32,7 +32,7 @@ const ProjectFilter = ({ projects }: { projects: ProjectType[] }) => {
           <div className='container mx-auto px-4'>
           <div className="text-center mb-20">
             <div className="inline-block">
-              <h1 className="text-3xl lg:text-4xl font-black mb-6 text-gray-800 relative">
+              <h1 className="text-3xl lg:text-4xl font-black mb-6 text-white relative">
                  Projects
               </h1>
             </div>

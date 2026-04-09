@@ -29,7 +29,7 @@ const Technologies = () => {
         {/* Header */}
         <div className="text-center mb-20">
             <div className="inline-block">
-              <h1 className="text-2xl lg:text-3xl font-black mb-6 text-gray-800 relative">
+              <h1 className="text-2xl lg:text-3xl font-black mb-6 text-white relative">
               Technologies I Work With
               </h1>
             </div>
