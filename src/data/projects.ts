@@ -9,7 +9,7 @@ export const projects: ProjectType[] = [
     longDescription: 'Cartify enables efficient inventory tracking, sales management, and customer insights. With barcode scanning, automated stock updates, and analytics, it helps retailers run smarter and faster.',
     techStack: ['React', 'Node.js', 'TypeScript', 'Tailwind CSS', 'MySQL', 'Express'],
     likes: 72,
-    category: 'Retail Management',
+    category: 'Supermarket Management',
     status: 'Completed',
     demoLink: '',
     githubLink: 'https://github.com/yourusername/cartify',
