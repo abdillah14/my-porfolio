@@ -25,7 +25,7 @@ const Hero = () => {
             {/* Heading */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-gray-100">
               <span className="block">Hello, I'm</span>
-              <span className="block mt-2 bg-gradient-to-r from-neutral-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent animate-gradient bg-[length:200%_auto]">
+              <span className="block mt-2 text-neutral-400 animate-gradient">
                 Abdillah Ally
               </span>
             </h1>
@@ -103,7 +103,7 @@ const Hero = () => {
         <div className="flex flex-col items-center gap-2 animate-bounce">
           <MousePointer className="w-6 h-6 text-gray-400" />
           <span className="text-xs text-gray-500 font-medium">Scroll to explore</span>
-          <div className="w-[2px] h-8 bg-gradient-to-b from-gray-400 to-transparent rounded-full" />
+          <div className="w-[2px] h-8 bg-gray-400 rounded-full" />
         </div>
       </div>
     </section>

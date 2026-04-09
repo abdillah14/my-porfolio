@@ -41,7 +41,7 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
             onError={() => setImageError(true)}
           />
         ) : (
-          <div className="h-full bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-900/20 dark:to-purple-900/20 flex items-center justify-center">
+          <div className="h-full bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center">
             <div className="bg-gray-200 dark:bg-gray-700 rounded-lg w-16 h-16 flex items-center justify-center">
               <svg className="w-8 h-8 text-gray-400 dark:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />

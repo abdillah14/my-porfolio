@@ -50,7 +50,7 @@ const ProjectDetail = ({ project }: { project: ProjectType }) => {
                 href={project.demoLink} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="px-5 py-2.5 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-medium hover:opacity-90 transition-opacity shadow-lg shadow-blue-500/20"
+                className="px-5 py-2.5 bg-blue-500 rounded-lg font-medium hover:opacity-90 transition-opacity shadow-lg shadow-blue-500/20"
               >
                 Live Demo
               </a>

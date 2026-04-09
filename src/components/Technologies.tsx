@@ -29,16 +29,15 @@ const Technologies = () => {
         {/* Header */}
         <div className="text-center mb-20">
             <div className="inline-block">
-              <h1 className="text-2xl lg:text-3xl font-black mb-6 bg-neutral-100  text-gray-800 to-cyan-400 bg-clip-text text-transparent relative">
+              <h1 className="text-2xl lg:text-3xl font-black mb-6 text-gray-800 relative">
               Technologies I Work With
-                <div className="absolute -top-2 -left-2 w-full h-full bg-gradient-to-r from-blue-400/20 via-purple-400/20 to-cyan-400/20 blur-2xl -z-10"></div>
               </h1>
             </div>
             <p className="text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed font-light">
             Tools and frameworks I use to build high-quality, scalable, and modern applications.
             </p>
             <div className="flex justify-center mt-8">
-              <div className="w-40 h-1 bg-gradient-to-r from-transparent via-cyan-500 to-transparent rounded-full animate-pulse"></div>
+              <div className="w-40 h-1 bg-cyan-500 rounded-full animate-pulse"></div>
             </div>
           </div>
        

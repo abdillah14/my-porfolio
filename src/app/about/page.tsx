@@ -6,7 +6,7 @@ import { NotepadText } from 'lucide-react';
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black relative overflow-hidden">
+    <main className="min-h-screen bg-gray-900 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -20,16 +20,15 @@ export default function AboutPage() {
           {/* Header */}
           <div className="text-center mb-20">
             <div className="inline-block">
-              <h1 className="text-3xl lg:text-4xl font-black mb-6 bg-neutral-100  text-gray-800 to-cyan-400 bg-clip-text text-transparent relative">
+              <h1 className="text-3xl lg:text-4xl font-black mb-6 text-gray-800 relative">
                 About Me
-                <div className="absolute -top-2 -left-2 w-full h-full bg-gradient-to-r from-blue-400/20 via-purple-400/20 to-cyan-400/20 blur-2xl -z-10"></div>
               </h1>
             </div>
             <p className="text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed font-light">
               Crafting next-generation digital experiences with cutting-edge technology and innovative design
             </p>
             <div className="flex justify-center mt-8">
-              <div className="w-40 h-1 bg-gradient-to-r from-transparent via-cyan-500 to-transparent rounded-full animate-pulse"></div>
+              <div className="w-40 h-1 bg-cyan-500 rounded-full animate-pulse"></div>
             </div>
           </div>
 
@@ -41,7 +40,7 @@ export default function AboutPage() {
               <div className="relative group">
                 <div className="absolute inset-0  rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
                 <div className="relative bg-gray-800/40 backdrop-blur-xl p-1 rounded-3xl border border-gray-700/30 shadow-2xl">
-                  <div className="bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-xl rounded-3xl p-8 border border-gray-600/20">
+                  <div className="bg-gray-800/80 backdrop-blur-xl rounded-3xl p-8 border border-gray-600/20">
                     <div className="relative">
                       {/* Main Profile Image */}
                       <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden border-2 border-transparent  p-0.5 shadow-2xl mb-8 group-hover:scale-105 transition-transform duration-500">
@@ -58,7 +57,7 @@ export default function AboutPage() {
                       {/* Profile Info */}
                       <div className="text-center relative z-10">
                         <h2 className="text-3xl font-bold mb-2 text-white">Abdillah Ally</h2>
-                        <div className="inline-block px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-cyan-500/20 backdrop-blur-sm rounded-full border border-purple-500/30 mb-4">
+                        <div className="inline-block px-4 py-2 bg-cyan-500/20 backdrop-blur-sm rounded-full border border-purple-500/30 mb-4">
                           <p className="text-neutral-400 font-medium">Software Engineer & AI Developer</p>
                         </div>
 
@@ -81,7 +80,7 @@ export default function AboutPage() {
 
               {/* Contact Card */}
               {/* <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-2xl blur-xl opacity-50 group-hover:opacity-70 transition-opacity"></div>
+                <div className="absolute inset-0 bg-purple-600/20 rounded-2xl blur-xl opacity-50 group-hover:opacity-70 transition-opacity"></div>
                 <div className="relative bg-gray-800/40 backdrop-blur-xl p-6 rounded-2xl border border-gray-700/30 shadow-xl">
                   <h3 className="font-bold mb-6 text-xl text-white flex items-center gap-2">
                     <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
@@ -90,7 +89,7 @@ export default function AboutPage() {
                   <div className="space-y-3">
                     <a href="mailto:abdillahally378@gmail.com" 
                        className="flex items-center gap-4 p-4 rounded-xl bg-gray-900/30 hover:bg-gray-900/60 text-gray-300 hover:text-blue-400 transition-all duration-300 border border-transparent hover:border-blue-500/30 group/link">
-                      <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center text-lg group-hover/link:scale-110 transition-transform">
+                      <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center text-lg group-hover/link:scale-110 transition-transform">
                         📧
                       </div>
                       <span className="font-medium">Email Me</span>
@@ -104,7 +103,7 @@ export default function AboutPage() {
                     </a>
                     <a href="https://github.com/abdillah14" 
                        className="flex items-center gap-4 p-4 rounded-xl bg-gray-900/30 hover:bg-gray-900/60 text-gray-300 hover:text-blue-400 transition-all duration-300 border border-transparent hover:border-blue-500/30 group/link">
-                      <div className="w-10 h-10 bg-gradient-to-r from-gray-700 to-gray-800 rounded-lg flex items-center justify-center text-lg group-hover/link:scale-110 transition-transform">
+                      <div className="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center text-lg group-hover/link:scale-110 transition-transform">
                         🖥
                       </div>
                       <span className="font-medium">GitHub</span>
@@ -118,10 +117,10 @@ export default function AboutPage() {
             <div className="lg:col-span-3 space-y-8">
               {/* Journey Section */}
               <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-purple-600/10 to-cyan-600/10 rounded-3xl blur-2xl group-hover:blur-xl transition-all duration-500"></div>
+                <div className="absolute inset-0 bg-blue-600/10 rounded-3xl blur-2xl group-hover:blur-xl transition-all duration-500"></div>
                 <div className="relative bg-gray-800/20 backdrop-blur-2xl p-10 rounded-3xl border border-gray-700/20 shadow-2xl">
                   <div className="flex items-center gap-4 mb-8">
-                    <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-purple-200 rounded-xl flex items-center justify-center text-2xl">
+                    <div className="w-12 h-12 bg-cyan-500 rounded-xl flex items-center justify-center text-2xl">
                       <NotepadText className='text-gray-800'/>
                     </div>
                     <h2 className="text-4xl font-bold text-white">My Journey</h2>
@@ -131,7 +130,7 @@ export default function AboutPage() {
                     <div className="relative pl-8 border-l-2 border-gradient-to-b from-blue-500 to-purple-500">
                       <div className="absolute -left-2 top-0 w-4 h-4 bg-cyan-500 rounded-full"></div>
                       <p className="text-lg font-light">
-                        With over <span className="text-white font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">3 years of dedicated experience</span> in software engineering, I specialize in architecting scalable web applications and crafting innovative digital solutions that drive exponential business growth.
+                        With over <span className="text-white font-semibold text-blue-400">3 years of dedicated experience</span> in software engineering, I specialize in architecting scalable web applications and crafting innovative digital solutions that drive exponential business growth.
                       </p>
                     </div>
 
@@ -157,9 +156,9 @@ export default function AboutPage() {
               {/* CTA Section */}
               <div className="relative group">
                 <div className="relative bg-gray-800/20 backdrop-blur-2xl rounded-3xl blur-2xl group-hover:blur-xl transition-all duration-500"></div>
-                <div className="relative bg-gradient-to-br from-blue-600/10 via-purple-600/10 to-cyan-600/10 backdrop-blur-2xl p-10 rounded-3xl border border-gradient-to-r border-blue-500/20 shadow-2xl">
+                <div className="relative bg-blue-600/10 backdrop-blur-2xl p-10 rounded-3xl border border-blue-500/20 shadow-2xl">
                   <div className="text-center">
-                    <div className="inline-block p-4 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-2xl mb-6">
+                    <div className="inline-block p-4 bg-blue-500/20 rounded-2xl mb-6">
                       <h3 className="text-3xl font-bold text-white">Ready to Build Something Amazing?</h3>
                     </div>
                     <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto font-light leading-relaxed">

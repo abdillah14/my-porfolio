@@ -32,7 +32,7 @@ const Header = () => {
         {/* Logo */}
         <Link
           href="/"
-          className="group relative text-2xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent hover:scale-105 transition-all duration-300"
+          className="group relative text-2xl font-bold text-blue-400 hover:scale-105 transition-all duration-300"
         >
           <span className="relative group font-semibold text-lg">
             &lt; Abdillah /&gt;
@@ -72,7 +72,7 @@ const Header = () => {
                 )}
 
                 {/* Hover effect */}
-                <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-cyan-100/0  group-hover:from-cyan-100/5  transition-all duration-300"></div>
+                <div className="absolute inset-0 rounded-lg bg-cyan-100/0 group-hover:bg-cyan-100/5 transition-all duration-300"></div>
               </Link>
             );
           })}
