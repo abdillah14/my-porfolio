@@ -27,18 +27,18 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-900/90 dark:bg-gray-950/90 backdrop-blur-sm border-t border-gray-800/50 dark:border-gray-900/50 py-12">
+    <footer className="bg-gray-900/90 dark:bg-[#121212]/90 backdrop-blur-sm border-t border-gray-800/50 dark:border-gray-900/50 py-12">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Brand Section */}
           <div className="mb-8 md:mb-0 text-center md:text-left">
             <Link 
               href="/" 
-              className="group text-2xl font-bold text-neutral-400 hover:text-blue-300 transition-all duration-300"
+              className="group text-2xl font-bold text-gray-400 dark:text-[#E0E0E0] hover:text-blue-300 dark:hover:text-blue-400 transition-all duration-300"
             >
               &lt; Abdillah /&gt;
             </Link>
-            <div className="flex items-center justify-center md:justify-start mt-3 text-gray-400">
+            <div className="flex items-center justify-center md:justify-start mt-3 text-gray-400 dark:text-[#E0E0E0]">
               <Code2 className="w-4 h-4 mr-2 text-blue-400" />
               <p className="text-sm">
                 Building exceptional digital experiences
@@ -54,7 +54,7 @@ const Footer = () => {
                 <a
                   key={social.name}
                   href={social.href}
-                  className={`group relative text-gray-500 ${social.hoverColor} transition-all duration-300 transform hover:scale-110 hover-lift`}
+                  className={`group relative text-gray-500 dark:text-gray-400 ${social.hoverColor} transition-all duration-300 transform hover:scale-110 hover-lift`}
                   aria-label={social.name}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -64,9 +64,9 @@ const Footer = () => {
                   </div>
                   
                   {/* Tooltip */}
-                  <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap">
+                  <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-800 dark:bg-gray-900 text-white dark:text-[#E0E0E0] text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap">
                     {social.name}
-                    <div className="absolute top-full left-1/2 transform -translate-x-1/2 border-4 border-transparent border-t-gray-800"></div>
+                    <div className="absolute top-full left-1/2 transform -translate-x-1/2 border-4 border-transparent border-t-gray-800 dark:border-t-gray-900"></div>
                   </div>
                 </a>
               );
@@ -75,13 +75,13 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-10 pt-8 border-t border-gray-800/50">
-          <div className="flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+        <div className="mt-10 pt-8 border-t border-gray-800/50 dark:border-gray-900/50">
+          <div className="flex flex-col md:flex-row justify-between items-center text-gray-500 dark:text-[#E0E0E0] text-sm">
             <div className="flex items-center mb-4 md:mb-0">
               <p>&copy; {currentYear} Abdillah Ally. All rights reserved.</p>
             </div>
             
-            <div className="flex items-center text-gray-600">
+            <div className="flex items-center text-gray-600 dark:text-[#E0E0E0]">
               <span>Made with</span>
               <Heart className="w-4 h-4 mx-2 text-red-500 animate-pulse" />
               <span>by abdillah ally</span>

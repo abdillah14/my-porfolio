@@ -39,8 +39,8 @@ export default function AboutPage() {
               {/* Hero Image Card */}
               <div className="relative group">
                 <div className="absolute inset-0 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
-                <div className="relative bg-gray-100 dark:bg-gray-800/40 backdrop-blur-xl p-1 rounded-3xl border border-gray-300 dark:border-gray-700/30 shadow-2xl">
-                  <div className="bg-white dark:bg-gray-800/80 backdrop-blur-xl rounded-3xl p-8 border border-gray-200 dark:border-gray-600/20">
+                <div className="relative bg-gray-100 dark:bg-[#1E1E1E] backdrop-blur-xl p-1 rounded-3xl border border-gray-300 dark:border-gray-700/30 shadow-2xl">
+                  <div className="bg-white dark:bg-[#1E1E1E] backdrop-blur-xl rounded-3xl p-8 border border-gray-200 dark:border-gray-600/20">
                     <div className="relative">
                       {/* Main Profile Image */}
                       <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden border-2 border-transparent p-0.5 shadow-2xl mb-8 group-hover:scale-105 transition-transform duration-500">
@@ -63,11 +63,11 @@ export default function AboutPage() {
 
                         {/* Stats */}
                         <div className="grid grid-cols-2 gap-4 mt-6">
-                          <div className="bg-gray-200 dark:bg-gray-800/50 backdrop-blur-sm p-4 rounded-xl border border-gray-300 dark:border-gray-700/30 card-hover">
+                          <div className="bg-gray-200 dark:bg-[#121212] backdrop-blur-sm p-4 rounded-xl border border-gray-300 dark:border-gray-700/30 card-hover">
                             <div className="text-2xl font-bold text-cyan-600 dark:text-cyan-400">3+</div>
                             <div className="text-sm text-gray-600 dark:text-gray-400">Years Exp.</div>
                           </div>
-                          <div className="bg-gray-200 dark:bg-gray-800/50 backdrop-blur-sm p-4 rounded-xl border border-gray-300 dark:border-gray-700/30 card-hover">
+                          <div className="bg-gray-200 dark:bg-[#121212] backdrop-blur-sm p-4 rounded-xl border border-gray-300 dark:border-gray-700/30 card-hover">
                             <div className="text-2xl font-bold text-cyan-600 dark:text-cyan-400">5+</div>
                             <div className="text-sm text-gray-600 dark:text-gray-400">Projects</div>
                           </div>
@@ -118,7 +118,7 @@ export default function AboutPage() {
               {/* Journey Section */}
               <div className="relative group animate-fade-in-up animate-delay-300">
                 <div className="absolute inset-0 bg-blue-600/10 dark:bg-blue-400/5 rounded-3xl blur-2xl group-hover:blur-xl transition-all duration-500"></div>
-                <div className="relative bg-gray-100 dark:bg-gray-800/20 backdrop-blur-2xl p-10 rounded-3xl border border-gray-300 dark:border-gray-700/20 shadow-2xl">
+                <div className="relative bg-gray-100 dark:bg-[#1E1E1E] backdrop-blur-2xl p-10 rounded-3xl border border-gray-300 dark:border-gray-700/20 shadow-2xl">
                   <div className="flex items-center gap-4 mb-8">
                     <div className="w-12 h-12 bg-cyan-500 dark:bg-cyan-400 rounded-xl flex items-center justify-center text-2xl">
                       <NotepadText className='text-gray-900 dark:text-gray-800'/>
@@ -155,8 +155,8 @@ export default function AboutPage() {
 
               {/* CTA Section */}
               <div className="relative group animate-fade-in-up animate-delay-400">
-                <div className="relative bg-gray-100 dark:bg-gray-800/20 backdrop-blur-2xl rounded-3xl blur-2xl group-hover:blur-xl transition-all duration-500"></div>
-                <div className="relative bg-blue-100 dark:bg-blue-600/10 backdrop-blur-2xl p-10 rounded-3xl border border-blue-300 dark:border-blue-500/20 shadow-2xl">
+                <div className="relative bg-gray-100 dark:bg-[#1E1E1E] backdrop-blur-2xl rounded-3xl blur-2xl group-hover:blur-xl transition-all duration-500"></div>
+                <div className="relative bg-blue-100 dark:bg-[#1E1E1E] backdrop-blur-2xl p-10 rounded-3xl border border-blue-300 dark:border-blue-500/20 shadow-2xl">
                   <div className="text-center">
                     <div className="inline-block p-4 bg-blue-200 dark:bg-blue-500/20 rounded-2xl mb-6">
                       <h3 className="text-3xl font-bold text-gray-900 dark:text-[#E0E0E0]">Ready to Build Something Amazing?</h3>
@@ -167,7 +167,7 @@ export default function AboutPage() {
                     <div className="flex flex-wrap justify-center gap-6">
                       <Link
                         href="/projects"
-                        className="group flex items-center justify-center gap-3 px-10 py-4 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 text-white rounded-2xl font-semibold text-lg hover:scale-105 transition-all duration-300 shadow-lg shadow-blue-500/25 dark:shadow-blue-400/20"
+                        className="group flex items-center justify-center gap-3 px-10 py-4 bg-gray-200 text-[#1E1E1E] rounded-2xl font-semibold text-lg hover:scale-105 transition-all duration-300 shadow-lg shadow-blue-500/25 dark:shadow-blue-400/20"
                       >
                         <span className="relative flex items-center gap-2">
                           View My Work
@@ -176,7 +176,7 @@ export default function AboutPage() {
                       </Link>
                       <Link
                         href="/contact"
-                        className="group flex items-center justify-center gap-3 px-10 py-4 bg-gray-200 dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl font-semibold text-lg hover:bg-gray-300 dark:hover:bg-gray-700/50 transition-all duration-300 border border-gray-300 dark:border-gray-600/50 hover:border-gray-400 dark:hover:border-gray-500 text-gray-900 dark:text-[#E0E0E0]"
+                        className="group flex items-center justify-center gap-3 px-10 py-4 bg-gray-200 dark:bg-[#121212] backdrop-blur-sm rounded-2xl font-semibold text-lg hover:bg-gray-300 dark:hover:bg-gray-900 transition-all duration-300 border border-gray-300 dark:border-gray-600/50 hover:border-gray-400 dark:hover:border-gray-500 text-gray-900 dark:text-[#E0E0E0]"
                       >
                         <span className="flex items-center gap-2">
                           Get In Touch

@@ -8,7 +8,7 @@ export default function ContactPage() {
   const [statusMessage, setStatusMessage] = useState('');
 
   const inputClasses =
-    `w-full bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700
+    `w-full bg-gray-100 dark:bg-[#1E1E1E] border border-gray-300 dark:border-gray-700
      rounded-lg pl-12 pr-4 py-3
      focus:outline-none focus:ring-2 focus:ring-blue-500
      text-gray-900 dark:text-[#E0E0E0] placeholder-gray-500 dark:placeholder-gray-500 transition-all duration-300`;
@@ -128,7 +128,7 @@ export default function ContactPage() {
                 type="submit"
                 disabled={isSubmitting}
                 className={`w-full flex items-center justify-center gap-2
-                           bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 text-white font-medium py-3 rounded-lg
+                           bg-gray-200 text-[#1E1E1E] font-medium py-3 rounded-lg
                            hover:scale-105 transition-all duration-300 shadow-lg
                            disabled:opacity-50 disabled:hover:scale-100`}
               >
@@ -181,7 +181,7 @@ function Social({ href, icon: Icon }: any) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-gray-200 dark:bg-gray-800 p-3 rounded-full text-gray-700 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all duration-300 hover:scale-110"
+      className="bg-gray-200 dark:bg-[#1E1E1E] p-3 rounded-full text-gray-700 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all duration-300 hover:scale-110 border border-gray-300 dark:border-gray-700"
     >
       <Icon className="w-5 h-5" />
     </a>

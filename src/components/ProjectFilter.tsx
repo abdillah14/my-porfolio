@@ -54,7 +54,7 @@ const ProjectFilter = ({ projects }: { projects: ProjectType[] }) => {
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:scale-105 ${
                 activeCategory === category
                   ? 'bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 text-white shadow-lg'
-                  : 'bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-300 dark:hover:bg-gray-700'
+                  : 'bg-gray-200 dark:bg-[#1E1E1E] text-gray-700 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-300 dark:hover:bg-gray-700'
               }`}
             >
               {category}

@@ -49,14 +49,14 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 mt-6 animate-fade-in-up animate-delay-500">
               <Link
                 href="/projects"
-                className="group flex items-center justify-center gap-2 px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 text-white text-lg font-semibold rounded-2xl hover:scale-105 transition-all duration-300 shadow-lg shadow-blue-500/25 dark:shadow-blue-400/20"
+                className="group flex items-center justify-center gap-2 px-8 py-3 bg-gray-200  text-[#1E1E1E] text-lg font-semibold rounded-2xl hover:scale-105 transition-all duration-300 shadow-lg shadow-blue-500/25 dark:shadow-blue-400/20"
               >
                 Explore My Work
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </Link>
               <Link
                 href="/contact"
-                className="group flex items-center justify-center gap-2 px-8 py-3 bg-gray-200 dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl text-lg font-semibold hover:bg-gray-300 dark:hover:bg-gray-700/50 transition-all duration-300 border border-gray-300 dark:border-gray-600/50 hover:border-gray-400 dark:hover:border-gray-500 text-gray-800 dark:text-gray-100"
+                className="group flex items-center justify-center gap-2 px-8 py-3 bg-gray-200 dark:bg-[#1E1E1E] backdrop-blur-sm rounded-2xl text-lg font-semibold hover:bg-gray-300 dark:hover:bg-gray-900 transition-all duration-300 border border-gray-300 dark:border-gray-600/50 hover:border-gray-400 dark:hover:border-gray-500 text-gray-800 dark:text-gray-100"
               >
                 <Mail className="w-5 h-5" />
                 Get In Touch
@@ -68,20 +68,20 @@ const Hero = () => {
               <span className="text-gray-500 dark:text-gray-400 font-medium text-sm">Quick Actions:</span>
               <div className="flex items-center gap-3">
                 <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"
-                   className="group flex items-center gap-2 px-3 py-2 bg-gray-200 dark:bg-gray-800/30 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-700/50 transition-all duration-300 hover:scale-105">
+                   className="group flex items-center gap-2 px-3 py-2 bg-gray-200 dark:bg-[#1E1E1E] rounded-lg hover:bg-gray-300 dark:hover:bg-gray-900 transition-all duration-300 hover:scale-105 border border-gray-300 dark:border-gray-700">
                   <Download className="w-4 h-4 text-green-500 dark:text-green-400" />
                   <span className="text-sm text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white">Resume</span>
                 </a>
                 <a href="https://github.com/abdillah14" target="_blank" rel="noopener noreferrer"
-                   className="group p-2 bg-gray-200 dark:bg-gray-800/30 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-700/50 transition-all duration-300 hover:scale-110">
+                   className="group p-2 bg-gray-200 dark:bg-[#1E1E1E] rounded-lg hover:bg-gray-300 dark:hover:bg-gray-900 transition-all duration-300 hover:scale-110 border border-gray-300 dark:border-gray-700">
                   <Github className="w-5 h-5 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white" />
                 </a>
                 <a href="https://www.linkedin.com/in/abdillah-ally-50a347269" target="_blank" rel="noopener noreferrer"
-                   className="group p-2 bg-gray-200 dark:bg-gray-800/30 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-700/50 transition-all duration-300 hover:scale-110">
+                   className="group p-2 bg-gray-200 dark:bg-[#1E1E1E] rounded-lg hover:bg-gray-300 dark:hover:bg-gray-900 transition-all duration-300 hover:scale-110 border border-gray-300 dark:border-gray-700">
                   <Linkedin className="w-5 h-5 text-blue-600 dark:text-blue-400 group-hover:text-blue-700 dark:group-hover:text-blue-300" />
                 </a>
                 <a href="https://x.com/Abdillahally10" target="_blank" rel="noopener noreferrer"
-                   className="group p-2 bg-gray-200 dark:bg-gray-800/30 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-700/50 transition-all duration-300 hover:scale-110">
+                   className="group p-2 bg-gray-200 dark:bg-[#1E1E1E] rounded-lg hover:bg-gray-300 dark:hover:bg-gray-900 transition-all duration-300 hover:scale-110 border border-gray-300 dark:border-gray-700">
                   <Twitter className="w-5 h-5 text-blue-600 dark:text-blue-400 group-hover:text-blue-700 dark:group-hover:text-blue-300" />
                 </a>
               </div>
@@ -121,7 +121,7 @@ export default Hero;
 /* Helper component for stats */
 function StatCard({ value, label, color }: { value: string; label: string; color: string }) {
   return (
-    <div className="flex flex-col items-center p-4 bg-gray-100 dark:bg-gray-900/50 rounded-2xl backdrop-blur-sm card-hover border border-gray-200 dark:border-gray-800">
+    <div className="flex flex-col items-center p-4 bg-gray-100 dark:bg-[#1E1E1E] rounded-2xl backdrop-blur-sm card-hover border border-gray-200 dark:border-gray-800">
       <div className={`text-3xl font-bold mb-2 ${color}`}>{value}</div>
       <div className="text-gray-600 dark:text-gray-400 text-sm">{label}</div>
     </div>

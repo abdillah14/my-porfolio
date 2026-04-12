@@ -30,14 +30,14 @@ const SkillsSection = () => {
         {skills.map((skillGroup, index) => (
           <div
             key={skillGroup.category}
-            className={`bg-slate-50 dark:bg-gray-800/50 rounded-xl p-6 shadow-md dark:shadow-gray-900/30 card-hover animate-fade-in-up animate-delay-${(index + 1) * 100}`}
+            className={`bg-slate-50 dark:bg-[#1E1E1E] rounded-xl p-6 shadow-md dark:shadow-gray-900/30 card-hover animate-fade-in-up animate-delay-${(index + 1) * 100}`}
           >
             <h3 className="text-xl font-bold mb-4 text-indigo-600 dark:text-indigo-400">{skillGroup.category}</h3>
             <div className="flex flex-wrap gap-2">
               {skillGroup.items.map((skill) => (
                 <span 
                   key={skill} 
-                  className="px-3 py-2 bg-white dark:bg-gray-700 border border-slate-200 dark:border-gray-600 text-slate-700 dark:text-gray-300 rounded-lg text-sm shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105 hover:border-indigo-400 dark:hover:border-indigo-500"
+                  className="px-3 py-2 bg-white dark:bg-[#121212] border border-slate-200 dark:border-gray-600 text-slate-700 dark:text-gray-300 rounded-lg text-sm shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105 hover:border-indigo-400 dark:hover:border-indigo-500"
                 >
                   {skill}
                 </span>

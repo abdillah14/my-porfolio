@@ -47,9 +47,9 @@ const Technologies = () => {
           {technologies.map((tech, index) => (
             <div
               key={tech.name}
-              className={`flex flex-col items-center p-6 bg-white dark:bg-gray-800/60 border border-gray-300 dark:border-gray-700 rounded-xl shadow-md hover:shadow-blue-500/30 dark:hover:shadow-blue-400/20 hover:border-blue-500/50 dark:hover:border-blue-400/50 transition-all duration-300 card-hover animate-scale-in animate-delay-${(index + 1) * 100}`}
+              className={`flex flex-col items-center p-6 bg-white dark:bg-[#1E1E1E] border border-gray-300 dark:border-gray-700 rounded-xl shadow-md hover:shadow-blue-500/30 dark:hover:shadow-blue-400/20 hover:border-blue-500/50 dark:hover:border-blue-400/50 transition-all duration-300 card-hover animate-scale-in animate-delay-${(index + 1) * 100}`}
             >
-              <div className="p-4 bg-gray-100 dark:bg-gray-900/80 rounded-full mb-3 flex items-center justify-center">
+              <div className="p-4 bg-gray-100 dark:bg-[#121212] rounded-full mb-3 flex items-center justify-center">
                 {tech.icon}
               </div>
               <span className="text-gray-700 dark:text-[#E0E0E0] text-sm font-medium">

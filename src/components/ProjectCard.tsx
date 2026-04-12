@@ -29,7 +29,7 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
   };
 
   return (
-    <div className="group bg-white dark:bg-gray-900/50 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-600 card-hover h-full flex flex-col backdrop-blur-sm overflow-hidden animate-fade-in-up">
+    <div className="group bg-white dark:bg-[#1E1E1E] rounded-lg border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-600 card-hover h-full flex flex-col backdrop-blur-sm overflow-hidden animate-fade-in-up">
       {/* Image Section */}
       <div className="relative h-48 bg-gray-100 dark:bg-gray-800">
         {!imageError ? (

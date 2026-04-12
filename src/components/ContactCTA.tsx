@@ -30,7 +30,7 @@ const ContactCTA = () => {
                 Get In Touch
               </Link>
               <Link 
-                href="/projects" 
+                href="/contact" 
                 className="px-8 py-4 bg-transparent text-white font-medium rounded-lg border-2 border-white hover:bg-white/10 transition-all duration-300 hover:scale-105"
               >
                 View Projects

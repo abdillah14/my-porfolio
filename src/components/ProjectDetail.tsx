@@ -37,8 +37,8 @@ const ProjectDetail = ({ project }: { project: ProjectType }) => {
       >
         <div className="flex flex-wrap justify-between items-start gap-4 mb-8">
           <div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-2">{project.title}</h1>
-            <div className="flex items-center gap-4 text-gray-400">
+            <h1 className="text-3xl md:text-4xl font-bold mb-2 text-gray-900 dark:text-[#E0E0E0]">{project.title}</h1>
+            <div className="flex items-center gap-4 text-gray-600 dark:text-gray-400">
               <span>{project.category}</span>
               <span className="w-1 h-1 bg-gray-400 rounded-full"></span>
               <span className={statusColors[project.status]}>{project.status}</span>
@@ -50,7 +50,7 @@ const ProjectDetail = ({ project }: { project: ProjectType }) => {
                 href={project.demoLink} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="px-5 py-2.5 bg-blue-500 rounded-lg font-medium hover:opacity-90 transition-opacity shadow-lg shadow-blue-500/20"
+                className="px-5 py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 text-white rounded-lg font-medium hover:scale-105 transition-all duration-300 shadow-lg shadow-blue-500/20"
               >
                 Live Demo
               </a>
@@ -170,22 +170,22 @@ const ProjectDetail = ({ project }: { project: ProjectType }) => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <div className="bg-gray-800/50 rounded-xl p-6 border border-gray-700 backdrop-blur-sm mb-8">
-            <h2 className="text-xl font-semibold mb-4">Project Overview</h2>
+          <div className="bg-gray-800/50 dark:bg-[#1E1E1E] rounded-xl p-6 border border-gray-700 backdrop-blur-sm mb-8">
+            <h2 className="text-xl font-semibold mb-4 text-gray-100 dark:text-[#E0E0E0]">Project Overview</h2>
             <p className="text-gray-400 mb-6">{project.longDescription}</p>
             
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <h3 className="text-gray-400 text-sm mb-1">Timeline</h3>
-                <p className="font-medium">{project.timeline}</p>
+                <p className="font-medium text-gray-200 dark:text-[#E0E0E0]">{project.timeline}</p>
               </div>
               <div>
                 <h3 className="text-gray-400 text-sm mb-1">Role</h3>
-                <p className="font-medium">{project.role}</p>
+                <p className="font-medium text-gray-200 dark:text-[#E0E0E0]">{project.role}</p>
               </div>
               <div>
                 <h3 className="text-gray-400 text-sm mb-1">Client</h3>
-                <p className="font-medium">{project.client}</p>
+                <p className="font-medium text-gray-200 dark:text-[#E0E0E0]">{project.client}</p>
               </div>
               <div>
                 <h3 className="text-gray-400 text-sm mb-1">Status</h3>
@@ -196,13 +196,13 @@ const ProjectDetail = ({ project }: { project: ProjectType }) => {
             </div>
           </div>
           
-          <div className="bg-gray-800/50 rounded-xl p-6 border border-gray-700 backdrop-blur-sm mb-8">
-            <h2 className="text-xl font-semibold mb-4">Technologies Used</h2>
+          <div className="bg-gray-800/50 dark:bg-[#1E1E1E] rounded-xl p-6 border border-gray-700 backdrop-blur-sm mb-8">
+            <h2 className="text-xl font-semibold mb-4 text-gray-100 dark:text-[#E0E0E0]">Technologies Used</h2>
             <div className="flex flex-wrap gap-2">
               {project.techStack.map((tech: string, index: number) => (
                 <span 
                   key={index} 
-                  className="px-3 py-1.5 bg-gray-700 rounded-lg text-sm hover:bg-gray-600 transition-colors"
+                  className="px-3 py-1.5 bg-gray-700 dark:bg-[#121212] rounded-lg text-sm hover:bg-gray-600 dark:hover:bg-gray-900 transition-colors text-gray-200 dark:text-[#E0E0E0]"
                 >
                   {tech}
                 </span>
@@ -211,8 +211,8 @@ const ProjectDetail = ({ project }: { project: ProjectType }) => {
           </div>
 
           {/* Key Features */}
-          <div className="bg-gray-800/50 rounded-xl p-6 border border-gray-700 backdrop-blur-sm">
-            <h2 className="text-xl font-semibold mb-4">Key Features</h2>
+          <div className="bg-gray-800/50 dark:bg-[#1E1E1E] rounded-xl p-6 border border-gray-700 backdrop-blur-sm">
+            <h2 className="text-xl font-semibold mb-4 text-gray-100 dark:text-[#E0E0E0]">Key Features</h2>
             <ul className="space-y-2">
               {project.features.map((feature, index) => (
                 <li key={index} className="flex items-center gap-3 text-gray-400">
@@ -229,12 +229,12 @@ const ProjectDetail = ({ project }: { project: ProjectType }) => {
       
       {/* Project Challenges & Solutions */}
       <motion.div
-        className="mt-12 bg-gray-800/50 rounded-xl p-6 border border-gray-700 backdrop-blur-sm"
+        className="mt-12 bg-gray-800/50 dark:bg-[#1E1E1E] rounded-xl p-6 border border-gray-700 backdrop-blur-sm"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.4 }}
       >
-        <h2 className="text-xl font-semibold mb-6">Challenges & Solutions</h2>
+        <h2 className="text-xl font-semibold mb-6 text-gray-100 dark:text-[#E0E0E0]">Challenges & Solutions</h2>
         
         <div className="space-y-6">
           {project.challenges.map((challenge, index: number) => (
