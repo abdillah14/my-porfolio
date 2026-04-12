@@ -32,18 +32,18 @@ const Header = () => {
         {/* Logo */}
         <Link
           href="/"
-          className="group relative text-2xl font-bold text-blue-400 hover:scale-105 transition-all duration-300"
+          className="group relative text-2xl font-bold text-gray-200 hover:scale-105 transition-all duration-300"
         >
           <span className="relative group font-semibold text-lg">
-            {/* &lt; Abdillah /&gt; */}
-            {/* <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-500 group-hover:w-full transition-all duration-300"></div> */}
-          </span>
-          <Image
+          {/* <Image
             src={pic}
             alt="Abdillah Ally"
             fill
             className="object-cover"
-          />
+          /> */}
+            &lt; Abdillah /&gt;
+            <div className="absolute -bottom-1 left-0 w-0 h-0.5  group-hover:w-full transition-all duration-300"></div>
+          </span>
 
         </Link>
 
