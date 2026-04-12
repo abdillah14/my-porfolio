@@ -32,14 +32,14 @@ const Navbar = () => {
   ];
   
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-sm py-3 shadow-md' : 'bg-transparent py-5'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm py-3 shadow-md dark:shadow-gray-900/50' : 'bg-transparent py-5'}`}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          <Link href="/" className="flex items-center gap-2">
-            <div className="bg-indigo-600 w-10 h-10 rounded-lg flex items-center justify-center">
+          <Link href="/" className="flex items-center gap-2 hover-lift">
+            <div className="bg-indigo-600 w-10 h-10 rounded-lg flex items-center justify-center transition-transform duration-300 hover:rotate-12">
               <span className="text-white font-bold text-xl">AM</span>
             </div>
-            <span className="font-bold text-slate-900 text-xl">Abdillah Ally</span>
+            <span className="font-bold text-slate-900 dark:text-gray-100 text-xl">Abdillah Ally</span>
           </Link>
           
           {/* Desktop Navigation */}
@@ -48,14 +48,14 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`font-medium transition-colors hover:text-indigo-600 ${pathname === link.href ? 'text-indigo-600' : 'text-slate-700'}`}
+                className={`font-medium transition-all duration-300 hover:text-indigo-600 dark:hover:text-indigo-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-indigo-600 dark:after:bg-indigo-400 after:transition-all after:duration-300 hover:after:w-full ${pathname === link.href ? 'text-indigo-600 dark:text-indigo-400 after:w-full' : 'text-slate-700 dark:text-gray-300'}`}
               >
                 {link.name}
               </Link>
             ))}
             <Link 
               href="/contact" 
-              className="px-5 py-2 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition-colors"
+              className="px-5 py-2 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 transition-all duration-300 hover:shadow-lg hover:scale-105"
             >
               Hire Me
             </Link>
@@ -85,13 +85,13 @@ const Navbar = () => {
         
         {/* Mobile Navigation Menu */}
         {isOpen && (
-          <div className="md:hidden mt-4 py-4 bg-white rounded-lg shadow-xl">
+          <div className="md:hidden mt-4 py-4 bg-white dark:bg-gray-900 rounded-lg shadow-xl dark:shadow-gray-900/50 animate-fade-in-up">
             <div className="flex flex-col gap-4 px-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`py-2 px-4 rounded-lg font-medium transition-colors ${pathname === link.href ? 'bg-indigo-50 text-indigo-600' : 'text-slate-700 hover:bg-slate-100'}`}
+                  className={`py-2 px-4 rounded-lg font-medium transition-all duration-300 ${pathname === link.href ? 'bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400' : 'text-slate-700 dark:text-gray-300 hover:bg-slate-100 dark:hover:bg-gray-800'}`}
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
@@ -99,7 +99,7 @@ const Navbar = () => {
               ))}
               <Link 
                 href="/contact" 
-                className="px-5 py-2 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition-colors text-center"
+                className="px-5 py-2 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 transition-all duration-300 text-center"
                 onClick={() => setIsOpen(false)}
               >
                 Hire Me

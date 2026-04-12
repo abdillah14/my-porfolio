@@ -27,7 +27,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-900/90 backdrop-blur-sm border-t border-gray-800/50 py-12">
+    <footer className="bg-gray-900/90 dark:bg-gray-950/90 backdrop-blur-sm border-t border-gray-800/50 dark:border-gray-900/50 py-12">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Brand Section */}
@@ -54,12 +54,12 @@ const Footer = () => {
                 <a
                   key={social.name}
                   href={social.href}
-                  className={`group relative text-gray-500 ${social.hoverColor} transition-all duration-300 transform hover:scale-110`}
+                  className={`group relative text-gray-500 ${social.hoverColor} transition-all duration-300 transform hover:scale-110 hover-lift`}
                   aria-label={social.name}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="bg-gray-800/80 hover:bg-gray-700/80 p-3 rounded-xl border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 backdrop-blur-sm">
+                  <div className="bg-gray-800/80 hover:bg-gray-700/80 dark:bg-gray-900/80 dark:hover:bg-gray-800/80 p-3 rounded-xl border border-gray-700/50 dark:border-gray-800/50 hover:border-gray-600/50 dark:hover:border-gray-700/50 transition-all duration-300 backdrop-blur-sm">
                     <IconComponent className="w-5 h-5" />
                   </div>
                   
