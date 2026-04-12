@@ -6,44 +6,44 @@ import { NotepadText } from 'lucide-react';
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-gray-900 relative overflow-hidden">
+    <main className="min-h-screen bg-white dark:bg-[#121212] relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-0 w-64 h-64 bg-cyan-500/5 rounded-full blur-2xl"></div>
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 dark:bg-blue-400/5 rounded-full blur-3xl animate-bounce-subtle"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/10 dark:bg-purple-400/5 rounded-full blur-3xl animate-bounce-subtle" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 left-0 w-64 h-64 bg-cyan-500/5 dark:bg-cyan-400/5 rounded-full blur-2xl"></div>
       </div>
 
       {/* Hero Section */}
       <section className="relative py-15 lg:py-32">
         <div className="container mx-auto px-4 ">
           {/* Header */}
-          <div className="text-center mb-20">
+          <div className="text-center mb-20 animate-fade-in-up">
             <div className="inline-block">
-              <h1 className="text-3xl lg:text-4xl font-black mb-6 text-white relative">
+              <h1 className="text-3xl lg:text-4xl font-black mb-6 text-gray-900 dark:text-[#E0E0E0] relative">
                 About Me
               </h1>
             </div>
-            <p className="text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed font-light">
+            <p className="text-2xl text-gray-600 dark:text-[#E0E0E0] max-w-3xl mx-auto leading-relaxed font-light">
               Crafting next-generation digital experiences with cutting-edge technology and innovative design
             </p>
             <div className="flex justify-center mt-8">
-              <div className="w-40 h-1 bg-cyan-500 rounded-full animate-pulse"></div>
+              <div className="w-40 h-1 bg-cyan-500 dark:bg-cyan-400 rounded-full animate-pulse"></div>
             </div>
           </div>
 
           {/* Main Content Grid */}
           <div className="grid lg:grid-cols-5 gap-8 lg:gap-12">
             {/* Left Side - Profile & Image */}
-            <div className="lg:col-span-2 space-y-8">
+            <div className="lg:col-span-2 space-y-8 animate-fade-in-up animate-delay-200">
               {/* Hero Image Card */}
               <div className="relative group">
-                <div className="absolute inset-0  rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
-                <div className="relative bg-gray-800/40 backdrop-blur-xl p-1 rounded-3xl border border-gray-700/30 shadow-2xl">
-                  <div className="bg-gray-800/80 backdrop-blur-xl rounded-3xl p-8 border border-gray-600/20">
+                <div className="absolute inset-0 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
+                <div className="relative bg-gray-100 dark:bg-gray-800/40 backdrop-blur-xl p-1 rounded-3xl border border-gray-300 dark:border-gray-700/30 shadow-2xl">
+                  <div className="bg-white dark:bg-gray-800/80 backdrop-blur-xl rounded-3xl p-8 border border-gray-200 dark:border-gray-600/20">
                     <div className="relative">
                       {/* Main Profile Image */}
-                      <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden border-2 border-transparent  p-0.5 shadow-2xl mb-8 group-hover:scale-105 transition-transform duration-500">
+                      <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden border-2 border-transparent p-0.5 shadow-2xl mb-8 group-hover:scale-105 transition-transform duration-500">
                         <div className="w-full h-full rounded-2xl overflow-hidden">
                           <Image
                             src={pic}
@@ -56,20 +56,20 @@ export default function AboutPage() {
 
                       {/* Profile Info */}
                       <div className="text-center relative z-10">
-                        <h2 className="text-3xl font-bold mb-2 text-white">Abdillah Ally</h2>
-                        <div className="inline-block px-4 py-2 bg-cyan-500/20 backdrop-blur-sm rounded-full border border-purple-500/30 mb-4">
-                          <p className="text-neutral-400 font-medium">Software Engineer & AI Developer</p>
+                        <h2 className="text-3xl font-bold mb-2 text-gray-900 dark:text-[#E0E0E0]">Abdillah Ally</h2>
+                        <div className="inline-block px-4 py-2 bg-cyan-500/20 backdrop-blur-sm rounded-full border border-cyan-500/30 dark:border-purple-500/30 mb-4">
+                          <p className="text-gray-700 dark:text-[#E0E0E0] font-medium">Software Engineer & AI Developer</p>
                         </div>
 
                         {/* Stats */}
                         <div className="grid grid-cols-2 gap-4 mt-6">
-                          <div className="bg-gray-800/50 backdrop-blur-sm p-4 rounded-xl border border-gray-700/30">
-                            <div className="text-2xl font-bold text-neutral-400">3+</div>
-                            <div className="text-sm text-gray-400">Years Exp.</div>
+                          <div className="bg-gray-200 dark:bg-gray-800/50 backdrop-blur-sm p-4 rounded-xl border border-gray-300 dark:border-gray-700/30 card-hover">
+                            <div className="text-2xl font-bold text-cyan-600 dark:text-cyan-400">3+</div>
+                            <div className="text-sm text-gray-600 dark:text-gray-400">Years Exp.</div>
                           </div>
-                          <div className="bg-gray-800/50 backdrop-blur-sm p-4 rounded-xl border border-gray-700/30">
-                            <div className="text-2xl font-bold text-neutral-400">5+</div>
-                            <div className="text-sm text-gray-400">Projects</div>
+                          <div className="bg-gray-200 dark:bg-gray-800/50 backdrop-blur-sm p-4 rounded-xl border border-gray-300 dark:border-gray-700/30 card-hover">
+                            <div className="text-2xl font-bold text-cyan-600 dark:text-cyan-400">5+</div>
+                            <div className="text-sm text-gray-600 dark:text-gray-400">Projects</div>
                           </div>
                         </div>
                       </div>
@@ -116,35 +116,35 @@ export default function AboutPage() {
             {/* Right Side - Content */}
             <div className="lg:col-span-3 space-y-8">
               {/* Journey Section */}
-              <div className="relative group">
-                <div className="absolute inset-0 bg-blue-600/10 rounded-3xl blur-2xl group-hover:blur-xl transition-all duration-500"></div>
-                <div className="relative bg-gray-800/20 backdrop-blur-2xl p-10 rounded-3xl border border-gray-700/20 shadow-2xl">
+              <div className="relative group animate-fade-in-up animate-delay-300">
+                <div className="absolute inset-0 bg-blue-600/10 dark:bg-blue-400/5 rounded-3xl blur-2xl group-hover:blur-xl transition-all duration-500"></div>
+                <div className="relative bg-gray-100 dark:bg-gray-800/20 backdrop-blur-2xl p-10 rounded-3xl border border-gray-300 dark:border-gray-700/20 shadow-2xl">
                   <div className="flex items-center gap-4 mb-8">
-                    <div className="w-12 h-12 bg-cyan-500 rounded-xl flex items-center justify-center text-2xl">
-                      <NotepadText className='text-gray-800'/>
+                    <div className="w-12 h-12 bg-cyan-500 dark:bg-cyan-400 rounded-xl flex items-center justify-center text-2xl">
+                      <NotepadText className='text-gray-900 dark:text-gray-800'/>
                     </div>
-                    <h2 className="text-4xl font-bold text-white">My Journey</h2>
+                    <h2 className="text-4xl font-bold text-gray-900 dark:text-[#E0E0E0]">My Journey</h2>
                   </div>
 
-                  <div className="space-y-8 text-gray-300 leading-relaxed">
+                  <div className="space-y-8 text-gray-700 dark:text-[#E0E0E0] leading-relaxed">
                     <div className="relative pl-8 border-l-2 border-gradient-to-b from-blue-500 to-purple-500">
-                      <div className="absolute -left-2 top-0 w-4 h-4 bg-cyan-500 rounded-full"></div>
+                      <div className="absolute -left-2 top-0 w-4 h-4 bg-cyan-500 dark:bg-cyan-400 rounded-full"></div>
                       <p className="text-lg font-light">
-                        With over <span className="text-white font-semibold text-blue-400">3 years of dedicated experience</span> in software engineering, I specialize in architecting scalable web applications and crafting innovative digital solutions that drive exponential business growth.
+                        With over <span className="text-gray-900 dark:text-white font-semibold text-blue-600 dark:text-blue-400">3 years of dedicated experience</span> in software engineering, I specialize in architecting scalable web applications and crafting innovative digital solutions that drive exponential business growth.
                       </p>
                     </div>
 
                     <div className="relative pl-8 border-l-2 border-gradient-to-b from-purple-500 to-cyan-500">
-                      <div className="absolute -left-2 top-0 w-4 h-4 bg-cyan-500 rounded-full"></div>
+                      <div className="absolute -left-2 top-0 w-4 h-4 bg-cyan-500 dark:bg-cyan-400 rounded-full"></div>
                       <p className="font-light">
-                        My academic foundation at <span className="text-cyan-200 font-semibold">International University of Equator</span> in Software Engineering equipped me with deep expertise in algorithms, distributed systems, and enterprise architecture.
+                        My academic foundation at <span className="text-cyan-600 dark:text-cyan-200 font-semibold">International University of Equator</span> in Software Engineering equipped me with deep expertise in algorithms, distributed systems, and enterprise architecture.
                       </p>
                     </div>
 
                     <div className="relative pl-8 border-l-2 border-gradient-to-b from-cyan-500 to-blue-500">
-                      <div className="absolute -left-2 top-0 w-4 h-4 bg-cyan-500 rounded-full"></div>
+                      <div className="absolute -left-2 top-0 w-4 h-4 bg-cyan-500 dark:bg-cyan-400 rounded-full"></div>
                       <p className="font-light">
-                        I'm passionate about leveraging emerging technologies like <span className="text-cyan-200 font-semibold">React, Next.js, TypeScript, and Nodejs as backend</span> to build high-performance, user-centric applications that deliver exceptional experiences and measurable ROI.
+                        I'm passionate about leveraging emerging technologies like <span className="text-cyan-600 dark:text-cyan-200 font-semibold">React, Next.js, TypeScript, and Nodejs as backend</span> to build high-performance, user-centric applications that deliver exceptional experiences and measurable ROI.
                       </p>
                     </div>
                   </div>
@@ -154,34 +154,33 @@ export default function AboutPage() {
 
 
               {/* CTA Section */}
-              <div className="relative group">
-                <div className="relative bg-gray-800/20 backdrop-blur-2xl rounded-3xl blur-2xl group-hover:blur-xl transition-all duration-500"></div>
-                <div className="relative bg-blue-600/10 backdrop-blur-2xl p-10 rounded-3xl border border-blue-500/20 shadow-2xl">
+              <div className="relative group animate-fade-in-up animate-delay-400">
+                <div className="relative bg-gray-100 dark:bg-gray-800/20 backdrop-blur-2xl rounded-3xl blur-2xl group-hover:blur-xl transition-all duration-500"></div>
+                <div className="relative bg-blue-100 dark:bg-blue-600/10 backdrop-blur-2xl p-10 rounded-3xl border border-blue-300 dark:border-blue-500/20 shadow-2xl">
                   <div className="text-center">
-                    <div className="inline-block p-4 bg-blue-500/20 rounded-2xl mb-6">
-                      <h3 className="text-3xl font-bold text-white">Ready to Build Something Amazing?</h3>
+                    <div className="inline-block p-4 bg-blue-200 dark:bg-blue-500/20 rounded-2xl mb-6">
+                      <h3 className="text-3xl font-bold text-gray-900 dark:text-[#E0E0E0]">Ready to Build Something Amazing?</h3>
                     </div>
-                    <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto font-light leading-relaxed">
+                    <p className="text-xl text-gray-700 dark:text-[#E0E0E0] mb-8 max-w-2xl mx-auto font-light leading-relaxed">
                       I'm always excited to collaborate on groundbreaking projects and transform visionary ideas into reality. Let's create the future together.
                     </p>
                     <div className="flex flex-wrap justify-center gap-6">
                       <Link
                         href="/projects"
-                        className="group flex items-center justify-center gap-3 px-10 py-4 bg-neutral-100 rounded-2xl font-semibold text-lg hover:from-blue-500 hover:to-purple-500 transition-all duration-300 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:scale-105"
+                        className="group flex items-center justify-center gap-3 px-10 py-4 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 text-white rounded-2xl font-semibold text-lg hover:scale-105 transition-all duration-300 shadow-lg shadow-blue-500/25 dark:shadow-blue-400/20"
                       >
-                        {/* <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-purple-700 translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300"></div> */}
-                        <span className="relative flex items-center gap-2 text-gray-800">
+                        <span className="relative flex items-center gap-2">
                           View My Work
-                          <span className="group-hover/btn:translate-x-1 transition-transform">→</span>
+                          <span className="group-hover:translate-x-1 transition-transform">→</span>
                         </span>
                       </Link>
                       <Link
                         href="/contact"
-                        className="group flex items-center justify-center gap-3 px-10 py-4 bg-gray-800/50 backdrop-blur-sm rounded-2xl font-semibold text-lg hover:bg-gray-700/50 transition-all duration-300 border border-gray-600/50 hover:border-gray-500"
+                        className="group flex items-center justify-center gap-3 px-10 py-4 bg-gray-200 dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl font-semibold text-lg hover:bg-gray-300 dark:hover:bg-gray-700/50 transition-all duration-300 border border-gray-300 dark:border-gray-600/50 hover:border-gray-400 dark:hover:border-gray-500 text-gray-900 dark:text-[#E0E0E0]"
                       >
                         <span className="flex items-center gap-2">
                           Get In Touch
-                          <span className="group-hover/btn:scale-110 transition-transform">💬</span>
+                          <span className="group-hover:scale-110 transition-transform">💬</span>
                         </span>
                       </Link>
                     </div>

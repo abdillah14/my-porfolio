@@ -8,10 +8,10 @@ export default function ContactPage() {
   const [statusMessage, setStatusMessage] = useState('');
 
   const inputClasses =
-    `w-full bg-gray-800 border border-gray-700
+    `w-full bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700
      rounded-lg pl-12 pr-4 py-3
      focus:outline-none focus:ring-2 focus:ring-blue-500
-     text-gray-200 placeholder-gray-500`;
+     text-gray-900 dark:text-[#E0E0E0] placeholder-gray-500 dark:placeholder-gray-500 transition-all duration-300`;
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -42,14 +42,14 @@ export default function ContactPage() {
   };
 
   return (
-    <section className="py-20" id="contact">
+    <section className="py-20 bg-white dark:bg-[#121212]" id="contact">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-20">
-          <h1 className="text-3xl lg:text-4xl font-black mb-6 text-white ">
+        <div className="text-center mb-20 animate-fade-in-up">
+          <h1 className="text-3xl lg:text-4xl font-black mb-6 text-gray-900 dark:text-[#E0E0E0]">
             Get In Touch
           </h1>
-          <p className="text-2xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-2xl text-gray-600 dark:text-[#E0E0E0] max-w-3xl mx-auto">
             Have a project in mind or want to discuss potential opportunities?
           </p>
         </div>
@@ -57,8 +57,8 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto grid lg:grid-cols-2 gap-12">
 
           {/* Contact Info */}
-          <div>
-            <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
+          <div className="animate-fade-in-up animate-delay-200">
+            <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-[#E0E0E0]">Contact Information</h2>
             <div className="space-y-6">
               <Info icon={Mail} title="Email" text="abdillahally378@gmail.com" />
               <Info icon={Phone} title="Phone" text="+257 69 088 722" />
@@ -73,8 +73,8 @@ export default function ContactPage() {
           </div>
 
           {/* Contact Form */}
-          <div>
-            <h2 className="text-2xl font-bold mb-6">Send me a message</h2>
+          <div className="animate-fade-in-up animate-delay-300">
+            <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-[#E0E0E0]">Send me a message</h2>
 
             <form
               onSubmit={handleSubmit}
@@ -128,9 +128,9 @@ export default function ContactPage() {
                 type="submit"
                 disabled={isSubmitting}
                 className={`w-full flex items-center justify-center gap-2
-                           bg-neutral-100  text-gray-800 font-medium py-3 rounded-lg
-                           hover:opacity-90 transition
-                           disabled:opacity-50`}
+                           bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 text-white font-medium py-3 rounded-lg
+                           hover:scale-105 transition-all duration-300 shadow-lg
+                           disabled:opacity-50 disabled:hover:scale-100`}
               >
                 {isSubmitting ? (
                   <span className="flex items-center gap-2">
@@ -163,13 +163,13 @@ export default function ContactPage() {
 /* Helpers */
 function Info({ icon: Icon, title, text }: any) {
   return (
-    <div className="flex items-start">
-      <div className="bg-cyan-500/10 p-3 rounded-full mr-4 text-neutral-400">
+    <div className="flex items-start hover-lift">
+      <div className="bg-cyan-500/10 dark:bg-cyan-500/10 p-3 rounded-full mr-4 text-cyan-600 dark:text-cyan-400">
         <Icon className="w-6 h-6" />
       </div>
       <div>
-        <h3 className="font-semibold">{title}</h3>
-        <p className="text-gray-400">{text}</p>
+        <h3 className="font-semibold text-gray-900 dark:text-[#E0E0E0]">{title}</h3>
+        <p className="text-gray-600 dark:text-gray-400">{text}</p>
       </div>
     </div>
   );
@@ -181,7 +181,7 @@ function Social({ href, icon: Icon }: any) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-gray-800 p-3 rounded-full text-gray-400 hover:text-white transition"
+      className="bg-gray-200 dark:bg-gray-800 p-3 rounded-full text-gray-700 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all duration-300 hover:scale-110"
     >
       <Icon className="w-5 h-5" />
     </a>

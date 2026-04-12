@@ -30,31 +30,31 @@ const ProjectFilter = ({ projects }: { projects: ProjectType[] }) => {
   return (
       <section className='py-5'>
           <div className='container mx-auto px-4'>
-          <div className="text-center mb-20">
+          <div className="text-center mb-20 animate-fade-in-up">
             <div className="inline-block">
-              <h1 className="text-3xl lg:text-4xl font-black mb-6 text-white relative">
+              <h1 className="text-3xl lg:text-4xl font-black mb-6 text-gray-900 dark:text-[#E0E0E0] relative">
                  Projects
               </h1>
             </div>
-            <p className="text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed font-light">
+            <p className="text-2xl text-gray-600 dark:text-[#E0E0E0] max-w-3xl mx-auto leading-relaxed font-light">
             Explore a collection of my work showcasing innovative solutions and clean code
             </p>
             <div className="flex justify-center mt-8">
-              <div className="w-40 h-1 bg-cyan-500 rounded-full animate-pulse"></div>
+              <div className="w-40 h-1 bg-cyan-500 dark:bg-cyan-400 rounded-full animate-pulse"></div>
             </div>
           </div>
 
       {/* Filter Controls */}
-      <div className="flex flex-col md:flex-row gap-4 mb-8 items-center justify-between">
+      <div className="flex flex-col md:flex-row gap-4 mb-8 items-center justify-between animate-fade-in-up animate-delay-200">
         <div className="flex flex-wrap gap-2">
           {categories.map(category => (
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+              className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:scale-105 ${
                 activeCategory === category
-                  ? 'bg-neutral-100  text-gray-800'
-                  : 'bg-gray-800 text-gray-400 hover:text-white hover:bg-gray-700'
+                  ? 'bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 text-white shadow-lg'
+                  : 'bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-300 dark:hover:bg-gray-700'
               }`}
             >
               {category}
@@ -65,7 +65,7 @@ const ProjectFilter = ({ projects }: { projects: ProjectType[] }) => {
         <select
           value={sortBy}
           onChange={(e) => setSortBy(e.target.value)}
-          className="px-3 py-2 bg-gray-800 border border-gray-700 rounded-lg text-sm focus:outline-none focus:border-blue-500"
+          className="px-3 py-2 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg text-sm text-gray-900 dark:text-[#E0E0E0] focus:outline-none focus:border-blue-500 transition-all duration-300"
         >
           <option value="likes">Most Liked</option>
           <option value="title">Alphabetical</option>
@@ -82,7 +82,7 @@ const ProjectFilter = ({ projects }: { projects: ProjectType[] }) => {
 
       {filteredAndSortedProjects.length === 0 && (
         <div className="text-center py-12">
-          <p className="text-gray-400">No projects found for the selected category.</p>
+          <p className="text-gray-600 dark:text-gray-400">No projects found for the selected category.</p>
         </div>
       )}
           </div>
