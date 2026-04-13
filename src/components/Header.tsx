@@ -27,12 +27,12 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-lg border-b border-gray-700/50 shadow-lg shadow-black/10">
+    <header className="sticky top-0 z-50 bg-[#121212]/95 text-[#E0E0E0] backdrop-blur-lg border-b border-white/10 shadow-lg shadow-black/20">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link
           href="/"
-          className="group relative text-2xl font-bold text-gray-200 hover:scale-105 transition-all duration-300"
+          className="group relative text-2xl font-bold text-[#E0E0E0] hover:scale-105 transition-all duration-300"
         >
           <span className="relative group font-semibold text-lg">
           {/* <Image
@@ -57,22 +57,22 @@ const Header = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`group relative flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-300 hover:bg-gray-800/50 hover:scale-105 ${isActive
-                    ? 'text-blue-400 bg-blue-500/10 shadow-lg shadow-cyan-100/8'
-                    : 'text-gray-300 hover:text-white'
+                className={`group relative flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white/10 hover:scale-105 ${isActive
+                    ? 'text-indigo-400 bg-indigo-500/10 shadow-lg shadow-indigo-900/30'
+                    : 'text-[#E0E0E0]/85 hover:text-[#E0E0E0]'
                   }`}
               >
-                <Icon className={`w-4 h-4 transition-all duration-300 ${isActive ? 'text-neutral-100' : 'group-hover:text-neutral-100'
+                <Icon className={`w-4 h-4 transition-all duration-300 ${isActive ? 'text-[#E0E0E0]' : 'group-hover:text-[#E0E0E0]'
                   }`} />
-                <span className="font-medium text-neutral-100">{item.name}</span>
+                <span className="font-medium text-[#E0E0E0]">{item.name}</span>
 
                 {/* Active indicator */}
                 {isActive && (
-                  <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-neutral-40 rounded-full"></div>
+                  <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-indigo-400 rounded-full"></div>
                 )}
 
                 {/* Hover effect */}
-                <div className="absolute inset-0 rounded-lg bg-cyan-100/0 group-hover:bg-cyan-100/5 transition-all duration-300"></div>
+                <div className="absolute inset-0 rounded-lg bg-indigo-100/0 group-hover:bg-indigo-100/5 transition-all duration-300"></div>
               </Link>
             );
           })}
@@ -80,7 +80,7 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden p-2 text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-lg transition-all duration-300 hover:scale-110"
+          className="md:hidden p-2 text-[#E0E0E0]/80 hover:text-[#E0E0E0] hover:bg-white/10 rounded-lg transition-all duration-300 hover:scale-110"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle navigation menu"
         >
@@ -95,7 +95,7 @@ const Header = () => {
       {/* Mobile Navigation */}
       <div className={`md:hidden overflow-hidden transition-all duration-300 ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}>
-        <div className="bg-gray-800/95 backdrop-blur-md border-t border-gray-700/50">
+        <div className="bg-[#121212]/95 backdrop-blur-md border-t border-white/10">
           <div className="container mx-auto px-4 py-4 space-y-2">
             {navItems.map((item) => {
               const Icon = item.icon;
@@ -105,13 +105,13 @@ const Header = () => {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`group flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 hover:bg-gray-700/50 hover:translate-x-2 ${isActive
-                      ? 'text-blue-400 bg-blue-500/10 border-l-2 border-blue-400'
-                      : 'text-gray-300 hover:text-white border-l-2 border-transparent'
+                  className={`group flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 hover:bg-white/10 hover:translate-x-2 ${isActive
+                      ? 'text-indigo-400 bg-indigo-500/10 border-l-2 border-indigo-400'
+                      : 'text-[#E0E0E0]/85 hover:text-[#E0E0E0] border-l-2 border-transparent'
                     }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  <Icon className={`w-5 h-5 transition-all duration-300 ${isActive ? 'text-blue-400' : 'group-hover:text-blue-400'
+                  <Icon className={`w-5 h-5 transition-all duration-300 ${isActive ? 'text-indigo-400' : 'group-hover:text-indigo-400'
                     }`} />
                   <span className="font-medium">{item.name}</span>
 

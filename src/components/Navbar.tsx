@@ -4,7 +4,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import Image from 'next/image';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,14 +31,14 @@ const Navbar = () => {
   ];
   
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 dark:bg-[#121212]/90 backdrop-blur-sm py-3 shadow-md dark:shadow-gray-900/50' : 'bg-transparent py-5'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#121212]/95 text-[#E0E0E0] backdrop-blur-sm py-3 shadow-md shadow-black/30' : 'bg-transparent py-5 text-[#E0E0E0]'}`}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center gap-2 hover-lift">
             <div className="bg-indigo-600 dark:bg-indigo-500 w-10 h-10 rounded-lg flex items-center justify-center transition-transform duration-300 hover:rotate-12">
               <span className="text-white font-bold text-xl">AM</span>
             </div>
-            <span className="font-bold text-slate-900 dark:text-[#E0E0E0] text-xl">Abdillah Ally</span>
+            <span className="font-bold text-[#E0E0E0] text-xl">Abdillah Ally</span>
           </Link>
           
           {/* Desktop Navigation */}
@@ -48,7 +47,7 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`font-medium transition-all duration-300 hover:text-indigo-600 dark:hover:text-indigo-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-indigo-600 dark:after:bg-indigo-400 after:transition-all after:duration-300 hover:after:w-full ${pathname === link.href ? 'text-indigo-600 dark:text-indigo-400 after:w-full' : 'text-slate-700 dark:text-[#E0E0E0]'}`}
+                className={`font-medium transition-all duration-300 hover:text-indigo-400 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-indigo-400 after:transition-all after:duration-300 hover:after:w-full ${pathname === link.href ? 'text-indigo-400 after:w-full' : 'text-[#E0E0E0]/90'}`}
               >
                 {link.name}
               </Link>
@@ -64,7 +63,7 @@ const Navbar = () => {
           {/* Mobile Navigation Toggle */}
           <button 
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-md text-slate-700 dark:text-[#E0E0E0] hover:text-indigo-600 dark:hover:text-indigo-400 focus:outline-none"
+            className="md:hidden p-2 rounded-md text-[#E0E0E0] hover:text-indigo-400 focus:outline-none"
             aria-label="Toggle navigation"
           >
             <svg 
@@ -85,13 +84,13 @@ const Navbar = () => {
         
         {/* Mobile Navigation Menu */}
         {isOpen && (
-          <div className="md:hidden mt-4 py-4 bg-white dark:bg-[#121212] rounded-lg shadow-xl dark:shadow-gray-900/50 animate-fade-in-up">
+          <div className="md:hidden mt-4 py-4 bg-[#121212] rounded-lg shadow-xl shadow-black/40 animate-fade-in-up">
             <div className="flex flex-col gap-4 px-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`py-2 px-4 rounded-lg font-medium transition-all duration-300 ${pathname === link.href ? 'bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400' : 'text-slate-700 dark:text-[#E0E0E0] hover:bg-slate-100 dark:hover:bg-gray-800'}`}
+                  className={`py-2 px-4 rounded-lg font-medium transition-all duration-300 ${pathname === link.href ? 'bg-indigo-900/30 text-indigo-400' : 'text-[#E0E0E0] hover:bg-white/10'}`}
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
