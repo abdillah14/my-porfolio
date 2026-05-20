@@ -96,7 +96,7 @@ export const projects: ProjectType[] = [
       features: ['Real-time cargo tracking', 'Cargo search and management',"Cargo booking and tracking", 'Cargo warehousing and customs', 'Cargo delivery and billing']
     },
   {
-    id: '1',
+    id: '3',
     title: 'KuwaSafe',
     description: 'Turn your code into full unit tests in a few seconds with KuwaSafe.',
     longDescription: 'KuwaSafe is an intelligent testing platform that leverages AI to automatically generate comprehensive unit tests for your codebase. It analyzes your code structure, identifies edge cases, and creates meaningful test scenarios to ensure robust code coverage.',
@@ -130,8 +130,95 @@ export const projects: ProjectType[] = [
     features: ['Automatic test generation', 'Multi-language support', 'Real-time analysis',]
   },
   {
-    id: '3',
-    title: 'Tafiti IQ',
+    id: '4',
+    title: 'Roomora',
+    description: 'Roomora helps hotels and restaurants manage bookings, orders, staff, and billing in one place. It offers real-time dashboards, automated workflows, and detailed reporting to improve efficiency and customer satisfaction.',
+    longDescription: 'Roomora helps hotels and restaurants manage bookings, orders, staff, and billing in one place. It offers real-time dashboards, automated workflows, and detailed reporting to improve efficiency and customer satisfaction.',
+    techStack: ['React.js', 'TypeScript', 'Tailwind CSS', 'Postgress', 'Express.js', 'Node.js'],
+    likes: 72,
+    category: 'Hotel SaaS Management',
+    status: 'Completed',
+    demoLink: '',
+    githubLink: 'https://github.com/yourusername/flashcargo',
+    images: [
+      "/roomora/roomora-1.png",
+      "/roomora/roomora-2.png",
+      "/roomora/roomora-3.png",
+      "/roomora/roomora-4.png",
+      "/roomora/roomora-6.png",
+      "/roomora/roomora-8.png",
+      "/roomora/roomora-9.png",
+      "/roomora/roomora-10.png",
+      "/roomora/roomora-11.png",
+    ],
+    thumbnail: '/roomora/roomora-1.png',
+      timeline: '3 months',
+      role: 'Full Stack Developer',
+      client: 'Hotel SaaS Management',
+      challenges: [
+        {
+          title: "Real-Time Cargo Tracking",
+          description:
+            "Ensuring that cargo status updates instantly after every pickup, transit, or delivery operation.",
+          solution:
+            "Implemented real-time updates using optimized API calls and efficient database queries to keep cargo data consistent across the system."
+        },
+        {
+          title: "Efficient Cargo Search and Management",
+          description:
+            "Managing and retrieving thousands of cargo quickly within the system.",
+          solution:
+            "Designed indexed database queries and integrated barcode scanning to enable fast cargo lookup and accurate cargo processing."
+        }
+      ],
+      features: ['Real-time cargo tracking', 'Cargo search and management',"Cargo booking and tracking", 'Cargo warehousing and customs', 'Cargo delivery and billing']
+    },
+      {
+      id: '5',
+      title: 'HMS',
+      description: 'HMS simplifies hospital operations by integrating patient records, appointments, billing, pharmacy, and laboratory systems. It improves coordination across departments and ensures better patient care.',
+      longDescription: 'HMS simplifies hospital operations by integrating patient records, appointments, billing, pharmacy, and laboratory systems. It improves coordination across departments and ensures better patient care.',
+      techStack: ['React.js', 'TypeScript', 'Tailwind CSS', 'Postgress', 'Express.js', 'Node.js'],
+      likes: 72,
+      category: 'Hospital Management System',
+      status: 'Completed',
+      demoLink: '',
+      githubLink: 'https://github.com/yourusername/flashcargo',
+      images: [
+        "/hms/hms-1.png",
+        "/hms/hms-2.png",
+        "/hms/hms-3.png",
+        "/hms/hms-4.png",
+        "/hms/hms-5.png",
+        "/hms/hms-6.png",
+        "/hms/hms-7.png",
+        "/hms/hms-8.png",
+        "/hms/hms-9.png",
+        "/hms/hms-10.png",
+      ],
+      thumbnail: '/hms/hms-1.png',
+        timeline: '3 months',
+        role: 'Full Stack Developer',
+        client: 'Hospital Management System',
+        challenges: [
+          {
+            title: "Real-Time Patient Tracking",
+            description:
+              "Ensuring that patient status updates instantly after every appointment, diagnosis, or treatment operation.",
+            solution:
+              "Implemented real-time updates using optimized API calls and efficient database queries to keep patient data consistent across the system."
+          },
+          {
+            title: "Efficient Patient Search and Management",
+            description:
+              "Managing and retrieving thousands of patient quickly within the system.",
+            solution:
+              "Designed indexed database queries and integrated barcode scanning to enable fast patient lookup and accurate patient processing."
+          }
+        ],
+        features: ['Real-time patient tracking', 'Patient search and management',"Patient booking and tracking", 'Patient warehousing and customs', 'Patient delivery and billing']
+      },
+  { id: '6', title: 'Tafiti IQ',
     description: 'Connect your SQL database and explore insights using plain English. No SQL expertise required - just ask questions and get instant visualizations.',
     longDescription: 'Tafiti IQ revolutionizes data analysis by allowing users to interact with their databases using natural language. The platform converts plain English queries into SQL, executes them, and presents results through interactive visualizations.',
     techStack: ['Next.js', 'Convex', 'Tailwind CSS', 'Langchain', 'D3.js', 'PostgreSQL'],
@@ -158,9 +245,7 @@ export const projects: ProjectType[] = [
     ],
     features: ['Natural language queries', 'Interactive dashboards', 'database support', 'Export capabilities']
   },
-  {
-    id: '4',
-    title: 'Juridic Law',
+  { id: '7', title: 'Juridic Law',
     description: 'Comprehensive legal case management system with document automation and client portal.',
     longDescription: 'Juridic Law is a complete legal practice management solution that streamlines case management, automates document generation, and provides clients with a secure portal to track their cases and communicate with their legal team.',
     techStack: ['React Native', 'Express.js', 'PostgreSQL', 'GraphQL', 'Redis', 'AWS'],
@@ -187,9 +272,7 @@ export const projects: ProjectType[] = [
     ],
     features: [' provides general legal information only']
   },
-  {
-    id: '5',
-    title: 'Nyaraka Docs',
+  { id: '8', title: 'Nyaraka Docs',
     description: 'document intelligence platform that lets you have natural conversations with your PDFs and Word documents.',
     longDescription: 'Whether you’re a student, researcher, or professional, Nyaraka turns your documents into an interactive knowledge assistant. Curious how AI can make your PDFs talk? Try Nyaraka and see the difference!',
     techStack: ['React', 'Tailwind','shadcn UI', 'Supabase DB'],
@@ -216,9 +299,7 @@ export const projects: ProjectType[] = [
     ],
     features: ['Upload any PDF or DOCX', 'Ask questions and get accurate, contextual answers', 'Generate smart summaries — concise or detailed ', 'Create quiz questions from your content']
   },
-  {
-    id: '6',
-    title: 'Sawa Struct',
+  { id: '9', title: 'Sawa Struct',
     description: 'To reduce architectural guesswork and provide structured, expert-level technical guidance using AI.',
     longDescription: 'a new agent system called SawaStruct — an intelligent Software Architecture Advisor designed to help engineers and founders make smarter architectural decisions from day one',
     techStack: ['Next.js', 'convex', 'Node.js', 'langchain'],
@@ -245,9 +326,7 @@ export const projects: ProjectType[] = [
     ],
     features: ['Analyzes complex system requirements', 'Recommends architecture patterns', 'Designs database structures', 'Plans scalable infrastructure']
   },
-  {
-    id: '7',
-    title: 'Press Pilot',
+  { id: '10', title: 'Press Pilot',
     description: 'Platform that uses advanced AI to create article and blog posts.',
     longDescription: 'An intelligent content creation platform that leverages multiple AI models to generate high-quality marketing copy, blog posts, and social media content. Features include tone adjustment, SEO optimization, and multi-language support.',
     techStack: ['Next.js', 'OpenAI API', 'Node.js', 'langchain'],
@@ -273,5 +352,39 @@ export const projects: ProjectType[] = [
       }
     ],
     features: ['Searches the web for relevant, up-to-date sources', 'Generates well-structured, engaging articles on any topic', 'Edits and refines content to meet professional journalism standards',]
-  }
+  },
+  {
+    id: '11',
+    title: 'PharmaCare',
+    description: 'PharmaCare is a comprehensive pharmacy management system that streamlines inventory, sales, and customer service operations.',
+    longDescription: 'PharmaCare is a comprehensive pharmacy management system that streamlines inventory, sales, and customer service operations.',
+    techStack: ['Next.js', 'OpenAI API', 'Node.js', 'langchain'],
+    likes: 37,
+    category: 'Pharmacy Management System',
+    status: 'Completed',
+    demoLink: 'https://press-pilot.vercel.app/',
+    githubLink: 'https://github.com/yourusername/ai-content-generator',
+    images:  [
+      "/pharma/pharma-1.png",
+      "/pharma/pharma-2.png",
+      "/pharma/pharma-3.png",
+      "/pharma/pharma-4.png",
+      "/pharma/pharma-5.png",
+      "/pharma/pharma-7.png",
+      "/pharma/pharma-8.png",
+      "/pharma/pharma-9.png",
+    ],
+    thumbnail: '/pharma/pharma-1.png',
+    timeline: '3 months',
+    role: 'AI Engineer',
+    client: 'Pharmacy Management System',
+    challenges: [
+      {
+        title: 'Pharmacy Management System',
+        description: 'PharmaCare is a comprehensive pharmacy management system that streamlines inventory, sales, and customer service operations.',
+        solution: 'Developed a comprehensive pharmacy management system that streamlines inventory, sales, and customer service operations.'
+      }
+    ],
+    features: ['Inventory management', 'Sales tracking', 'Customer management', 'Pharmacy management', 'Pharmacy management']
+  },
 ];
